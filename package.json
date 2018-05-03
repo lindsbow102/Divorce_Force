@@ -1,0 +1,28 @@
+{
+  "name": "Legal_Zoom",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lindsbow102/Legal_Zoom.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lindsbow102/Legal_Zoom/issues"
+  },
+  "homepage": "https://github.com/lindsbow102/Legal_Zoom#readme",
+  "dependencies": {
+    "docxtemplater": "^3.6.2",
+    "jszip": "^2.6.1",
+    "jszip-utils": "0.0.2",
+    "mysql2": "^1.5.3",
+    "sequelize": "^4.37.6"
+  },
+  "devDependencies": {}
+}
