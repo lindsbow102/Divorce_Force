@@ -57,18 +57,22 @@
                         <label for="lawyer_bar_num">Lawyer Bar Number</label>
                         <input class="form-control" id="form18_1" type="text" tabindex="7" value="" data-objref="1011 0 R" title="Lawyer&#39;s Bar Number"
                             data-field-name="lawyer_bar_num" />
-                        <label for="rep_self">Representing</label>
-                        <input class="form-control" id="form1_1" type="radio" tabindex="8" data-objref="1012 0 R" title="Self, without a Lawyer"
-                            data-field-name="rep_self" imageName="1/form/1012 0 R" images="110100" />Self, without a Lawyer
 
-                        <input id="form2_1" type="radio" tabindex="9" data-objref="1013 0 R" title="Attorney for" data-field-name="rep_attorney"
-                            imageName="1/form/1013 0 R" images="110100" />Attorney for
+                        <label for="rep_self">Self, without a Lawyer</label>
+                        <input class="form-control" id="form1_1" type="checkbox" tabindex="8" data-objref="1012 0 R" title="Self, without a Lawyer"
+                            data-field-name="rep_self" imageName="1/form/1012 0 R" images="110100" />
 
-                        <input id="form4_1" type="radio" tabindex="10" data-objref="1014 0 R" title="Petitioner" data-field-name="attorney_petitioner"
-                            imageName="1/form/1014 0 R" images="110100" />Petitioner
+                        <label for="attorney_for">Attorney for</label>
+                        <input id="form2_1" type="checkbox" tabindex="9" data-objref="1013 0 R" title="Attorney for" data-field-name="rep_attorney"
+                            imageName="1/form/1013 0 R" images="110100" />
 
-                        <input id="form6_1" type="radio" tabindex="11" data-objref="1015 0 R" title="Respondent" data-field-name="attorney_respondent"
-                            imageName="1/form/1015 0 R" images="110100" />Respondent
+                        <label for="petitioner">Petitioner</label>
+                        <input id="form4_1" type="checkbox" tabindex="10" data-objref="1014 0 R" title="Petitioner" data-field-name="attorney_petitioner"
+                            imageName="1/form/1014 0 R" images="110100" />
+
+                        <label for="respondent">Respondent</label>
+                        <input id="form6_1" type="checkbox" tabindex="11" data-objref="1015 0 R" title="Respondent" data-field-name="attorney_respondent"
+                            imageName="1/form/1015 0 R" images="110100" />
 
                         <label for="case_number">Case Number</label>
                         <input class="form-control" id="form10_1" type="text" tabindex="12" value="" data-objref="1016 0 R" title="Case Number" data-field-name="case_num"
@@ -76,9 +80,11 @@
                         <label for="petitioner_name">Petitioner Name</label>
                         <input class="form-control" id="form16_1" type="text" tabindex="13" value="" data-objref="1017 0 R" title="Name of Petitioner"
                             data-field-name="petitioner_name" />
+
                         <label for="respondent_name">Respondent Name</label>
                         <input class="form-control" id="form15_1" type="text" tabindex="14" value="" data-objref="1018 0 R" title="Name of Respondent"
                             data-field-name="respondent_name" />
+
                         <label for="petitioner_name">Petitioner Name</label>
                         <input class="form-control" id="form29_1" type="text" tabindex="15" value="" data-objref="1019 0 R" title="Name of Petitioner"
                             data-field-name="petitioner_name" />
@@ -127,46 +133,55 @@
                         <input class="form-control" id="form17_1" type="text" tabindex="26" value="" data-objref="1030 0 R" title="City and state or country where we were married"
                             data-field-name="marriage_city_st" />
 
-                        <label for="convent_marriage">Convent Marriage</label>
-                        <input class="form-control" id="form7_1" type="radio" name="marriage-info" tabindex="27" data-objref="1031 0 R" title="We do not have a covenant marriage (If not sure, refer to the INSTRUCTIONS for information"
+                        <label for="convent_marriage">Covenant Marriage</label>
+                        <input class="form-control" id="form7_1" type="checkbox" name="marriage-info" tabindex="27" data-objref="1031 0 R" title="We do not have a covenant marriage (If not sure, refer to the INSTRUCTIONS for information"
                             data-field-name="convent_marriage" imageName="1/form/1031 0 R" images="110100" />
 
                         <label for="broken_marriage">Broken Marriage</label>
-                        <input class="form-control" id="form3_1" type="radio" name="marriage-info" tabindex="28" data-objref="1032 0 R" title="Our marriage is broken beyond repair (“irretrievably broken”) and there is no hope of reconciliation"
+                        <input class="form-control" id="form3_1" type="checkbox" name="marriage-info" tabindex="28" data-objref="1032 0 R" title="Our marriage is broken beyond repair (“irretrievably broken”) and there is no hope of reconciliation"
                             data-field-name="broken_marriage" imageName="1/form/1032 0 R" images="110100" />
 
                         <label for="conciliation_attempted">Conciliation Attempted</label>
-                        <input class="form-control" id="form5_1" type="radio" name="marriage-info" tabindex="29" data-objref="1033 0 R" title="We have tried to resolve our problems through Conciliation Services or going to Conciliation"
+                        <input class="form-control" id="form5_1" type="checkbox" name="marriage-info" tabindex="29" data-objref="1033 0 R" title="We have tried to resolve our problems through Conciliation Services or going to Conciliation"
                             data-field-name="conciliation_attempted" imageName="1/form/1033 0 R" images="110100" />
+
+                        <br>
 
                         <label for="case_num">Case Number</label>
                         <input class="form-control" id="form79_2" type="text" tabindex="30" value="" data-objref="373 0 R" title="Case Number" data-field-name="case_num"
                         />
 
-                        <h3>90 DAY REQUIREMENT; CHECK ONE BOX</h3>
-                        <label for="i">I</label>
-                        <input id="form15_2" type="radio" name="90-day-req" tabindex="31" data-objref="369 0 R" title="Arizona for at least 90 days before I filed this action. (WARNING: If this statement is not true, you cannot"
+                        <p>90 DAY REQUIREMENT: (CHECK ONE BOX)</p>
+
+                        <input id="form15_2" type="checkbox" name="90-day-req" tabindex="31" data-objref="369 0 R" title="Arizona for at least 90 days before I filed this action. (WARNING: If this statement is not true, you cannot"
                             data-field-name="90day_yes" imageName="2/form/369 0 R" images="110100" />
-                        <label for="my-spouse">my spouse</label>
-                        <input id="form6_2" type="radio" name="90-day-req" tabindex="32" data-objref="375 0 R" title="my spouse" data-field-name="90day_no"
+                        <label for="i">I</label>
+
+                        <br>
+
+                        <input id="form6_2" type="checkbox" name="90-day-req" tabindex="32" data-objref="375 0 R" title="my spouse" data-field-name="90day_no"
                             imageName="2/form/375 0 R" images="110100" />
+                        <label for="my-spouse">my spouse</label>
 
-                        <h3>COMMUNITY PROPERTY; CHECK ONE BOX</h3>
+                        <p>COMMUNITY PROPERTY: (CHECK ONE BOX)</p>
 
-                        <label for="community_prop_no">My spouse and I
-                            <strong>did not acquire any community property during the marriage, OR</strong>
-                        </label>
-                        <input id="form49_2" type="radio" name="community-property" tabindex="33" data-objref="371 0 R" data-field-name="community_prop_no"
+                        <input id="form49_2" type="checkbox" name="community-property" tabindex="33" data-objref="371 0 R" data-field-name="community_prop_no"
                             imageName="2/form/371 0 R" images="110100" />
+                        <label for="community_prop_no">My spouse and I
+                            <strong>did not</strong> acquire any community property during the marriage, OR
+                        </label>
+
+                        <input id="form53_2" type="checkbox" name="community-property" tabindex="34" data-objref="374 0 R" data-field-name="community_prop_yes"
+                            imageName="2/form/374 0 R" images="110100" />
                         <label for="community_prop_yes">My spouse and I
                             <strong>did</strong> acquire property during our marriage and we should divide it as follows:</label>
-                        <input id="form53_2" type="radio" name="community-property" tabindex="34" data-objref="374 0 R" data-field-name="community_prop_yes"
-                            imageName="2/form/374 0 R" images="110100" />
 
-                        <label for="real_estate1_yes">Real Estate #1</label>
+                        <br>
+
                         <input id="form46_2" type="checkbox" tabindex="35" data-objref="370 0 R" data-field-name="real_estate1_yes" imageName="2/form/370 0 R"
                             images="110100" />
-
+                        <label for="real_estate1_yes">Real Estate #1</label>
+                            <br>
                         <label for="real_estate1_location">
                             <strong>Real estate #1located at: </strong>
                         </label>
@@ -174,10 +189,10 @@
                         />
 
                         <label for="real_estate1_p">Petitioner</label>
-                        <input id="form33_2" type="radio" name="rel-estate-type" tabindex="37" data-objref="368 0 R" data-field-name="real_estate1_p"
+                        <input id="form33_2" type="checkbox" name="rel-estate-type" tabindex="37" data-objref="368 0 R" data-field-name="real_estate1_p"
                             imageName="2/form/368 0 R" images="110100" />
                         <label for="real_estate1_res">Respondent</label>
-                        <input id="form40_2" type="radio" name="rel-estate-type" tabindex="38" data-objref="383 0 R" data-field-name="real_estate1_res"
+                        <input id="form40_2" type="checkbox" name="rel-estate-type" tabindex="38" data-objref="383 0 R" data-field-name="real_estate1_res"
                             imageName="2/form/383 0 R" images="110100" />
 
                         <label for="real_estate1_value">Value $</label>
@@ -225,17 +240,17 @@
                             <input class="form-control" id="form89_2" type="text" tabindex="52" value="" data-objref="394 0 R" title="Household furniture and appliances [2]"
                                 data-field-name="Household furniture and appliances 2 DRDA10f" />
 
-                            <input id="form2_2" type="radio" tabindex="53" data-objref="391 0 R" data-field-name="Check Box23 DRDA10f" imageName="2/form/391 0 R"
+                            <input id="form2_2" type="checkbox" tabindex="53" data-objref="391 0 R" data-field-name="Check Box23 DRDA10f" imageName="2/form/391 0 R"
                                 images="110100" />Petitioner
                             <br>
                             <label for="furniture_and_appliances">Item 2:</label>
                             <input class="form-control" id="form95_2" type="text" tabindex="54" value="" data-objref="392 0 R" title="Household furniture and appliances [3]"
                                 data-field-name="Household furniture and appliances 3 DRDA10f" />
 
-                            <input id="form47_2" type="radio" tabindex="55" data-objref="393 0 R" data-field-name="Check Box24 DRDA10f" imageName="2/form/393 0 R"
+                            <input id="form47_2" type="checkbox" tabindex="55" data-objref="393 0 R" data-field-name="Check Box24 DRDA10f" imageName="2/form/393 0 R"
                                 images="110100" />Petitioner
 
-                            <input id="form12_2" type="radio" tabindex="56" data-objref="396 0 R" data-field-name="Check Box25 DRDA10f" imageName="2/form/396 0 R"
+                            <input id="form12_2" type="checkbox" tabindex="56" data-objref="396 0 R" data-field-name="Check Box25 DRDA10f" imageName="2/form/396 0 R"
                                 images="110100" />Respondent
 
                             <input id="form93_2" type="text" tabindex="57" value="" data-objref="398 0 R" title="Household furniture and appliances [4]"
@@ -243,9 +258,9 @@
                         </div>
                         <div>
                             <label for="furniture_and_appliances">Item 2</label>
-                            <input class="form-control" id="form29_2" type="radio" tabindex="58" data-objref="399 0 R" data-field-name="Check Box26 DRDA10f"
+                            <input class="form-control" id="form29_2" type="checkbox" tabindex="58" data-objref="399 0 R" data-field-name="Check Box26 DRDA10f"
                                 imageName="2/form/399 0 R" images="110100" />Petitioner
-                            <input id="form13_2" type="radio" tabindex="59" data-objref="400 0 R" data-field-name="Check Box27 DRDA10f" imageName="2/form/400 0 R"
+                            <input id="form13_2" type="checkbox" tabindex="59" data-objref="400 0 R" data-field-name="Check Box27 DRDA10f" imageName="2/form/400 0 R"
                                 images="110100" />Respondent
                             <input id="form84_2" type="text" tabindex="60" value="" data-objref="408 0 R" title="Household furniture and appliances [5]"
                                 data-field-name="Household furniture and appliances 5 DRDA10f" />Value
