@@ -1,49 +1,49 @@
 module.exports = function(sequelize, DataTypes) {
   var form_data = sequelize.define("Post", {
     form22_1: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
       }
     },
     form14_1: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
       }
     },
     form20_1: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
       }
     },
     form24_1: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
       }
     },
     form23_1: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
       }
     },
     form21_1: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
       }
     },
     form18_1: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
@@ -78,105 +78,105 @@ module.exports = function(sequelize, DataTypes) {
       }
     },
     form10_1: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
       }
     },
     form16_1: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
       }
     },
     form15_1: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
       }
     },
     form29_1: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
       }
     },
     form27_1: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
       }
     },
     form13_1: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
       }
     },
     form26_1: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
       }
     },
     form8_1: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
       }
     },
     form25_1: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
       }
     },
     form28_1: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
       }
     },
     form11_1: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
       }
     },
     form19_1: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
       }
     },
     form9_1: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
       }
     },
     form12_1: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
       }
     },
     form17_1: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
@@ -204,7 +204,7 @@ module.exports = function(sequelize, DataTypes) {
       }
     },
     form79_2: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
@@ -246,7 +246,7 @@ module.exports = function(sequelize, DataTypes) {
       }
     },
     form104_2: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
@@ -267,21 +267,21 @@ module.exports = function(sequelize, DataTypes) {
       }
     },
     form66_2: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
       }
     },
     form106_2: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
       }
     },
     form103_2: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
@@ -309,14 +309,14 @@ module.exports = function(sequelize, DataTypes) {
       }
     },
     form78_2: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
       }
     },
     form105_2: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
@@ -330,7 +330,7 @@ module.exports = function(sequelize, DataTypes) {
       }
     },
     form101_2: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
@@ -358,7 +358,7 @@ module.exports = function(sequelize, DataTypes) {
       }
     },
     form89_2: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
@@ -372,7 +372,7 @@ module.exports = function(sequelize, DataTypes) {
       }
     },
     form95_2: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
@@ -392,7 +392,7 @@ module.exports = function(sequelize, DataTypes) {
         len: [1]
       }
     },form93_2: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
@@ -413,7 +413,7 @@ module.exports = function(sequelize, DataTypes) {
       }
     },
     form84_2: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
@@ -434,7 +434,7 @@ module.exports = function(sequelize, DataTypes) {
       }
     },
     form102_2: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
@@ -462,7 +462,7 @@ module.exports = function(sequelize, DataTypes) {
       }
     },
     form92_2: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
@@ -483,7 +483,7 @@ module.exports = function(sequelize, DataTypes) {
       }
     },
     form100_2: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
@@ -504,21 +504,21 @@ module.exports = function(sequelize, DataTypes) {
       }
     },
     form91_2: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
       }
     },
     form98_2: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
       }
     },
     form97_2: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
@@ -532,49 +532,49 @@ module.exports = function(sequelize, DataTypes) {
       }
     },
     form87_2: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
       }
     },
     form86_2: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
       }
     },
     form94_2: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
       }
     },
     form71_2: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
       }
     },
     form63_2: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
       }
     },
     form70_2: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
       }
     },
     form69_2: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
@@ -609,105 +609,105 @@ module.exports = function(sequelize, DataTypes) {
       }
     },
     form26_2: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
       }
     },
     form3_2: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
       }
     },
     form57_2: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
       }
     },
     form39_2: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
       }
     },
     form16_2: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
       }
     },
     form77_2: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
       }
     },
     form51_2: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
       }
     },
     form21_2: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
       }
     },
     form76_2: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
       }
     },
     form27_2: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
       }
     },
     form7_2: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
       }
     },
     form65_2: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
       }
     },
     form45_2: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
       }
     },
     form31_2: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
       }
     },
     form4_2: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
@@ -735,7 +735,7 @@ module.exports = function(sequelize, DataTypes) {
       }
     },
     form62_2: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
@@ -777,7 +777,7 @@ module.exports = function(sequelize, DataTypes) {
       }
     },
     form61_2: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
@@ -798,21 +798,21 @@ module.exports = function(sequelize, DataTypes) {
       }
     },
     form42_2: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
       }
     },
     form11_2: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
       }
     },
     form90_2: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
@@ -833,21 +833,21 @@ module.exports = function(sequelize, DataTypes) {
       }
     },
     form96_2: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
       }
     },
     form74_2: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
       }
     },
     form60_2: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
@@ -868,7 +868,7 @@ module.exports = function(sequelize, DataTypes) {
       }
     },
     form73_2: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
@@ -882,14 +882,14 @@ module.exports = function(sequelize, DataTypes) {
       }
     },
     form80_2: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
       }
     },
     form56_2: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
@@ -910,48 +910,48 @@ module.exports = function(sequelize, DataTypes) {
       }
     },
     form72_2: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
       }
     },
     form83_2: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
       }
     },form82_2: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
       }
     },
     form81_2: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
       }
     },
     form47_3: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
       }
     },
     form48_3: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
       }
     },
     form34_3: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
@@ -972,28 +972,28 @@ module.exports = function(sequelize, DataTypes) {
       }
     },
     form42_3: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
       }
     },
     form50_3: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
       }
     },
     form51_3: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
       }
     },
     form49_3: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
@@ -1021,7 +1021,7 @@ module.exports = function(sequelize, DataTypes) {
       }
     },
     form59_3: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
@@ -1042,7 +1042,7 @@ module.exports = function(sequelize, DataTypes) {
       }
     },
     form57_3: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
@@ -1063,14 +1063,14 @@ module.exports = function(sequelize, DataTypes) {
       }
     },
     form45_3: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
       }
     },
     form38_3: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
@@ -1091,7 +1091,7 @@ module.exports = function(sequelize, DataTypes) {
       }
     },
     form36_3: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
@@ -1112,7 +1112,7 @@ module.exports = function(sequelize, DataTypes) {
       }
     },
     form53_3: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
@@ -1126,7 +1126,7 @@ module.exports = function(sequelize, DataTypes) {
       }
     },
     form2_3: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
@@ -1154,7 +1154,7 @@ module.exports = function(sequelize, DataTypes) {
       }
     },
     form56_3: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
@@ -1175,35 +1175,35 @@ module.exports = function(sequelize, DataTypes) {
       }
     },
     form62_3: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
       }
     },
     form61_3: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
       }
     },
     form40_3: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
       }
     },
     form46_3: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
       }
     },
     form39_3: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
@@ -1224,7 +1224,7 @@ module.exports = function(sequelize, DataTypes) {
       }
     },
     form44_3: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
@@ -1245,7 +1245,7 @@ module.exports = function(sequelize, DataTypes) {
       }
     },
     form43_3: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
@@ -1273,7 +1273,7 @@ module.exports = function(sequelize, DataTypes) {
       }
     },
     form60_3: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
@@ -1294,7 +1294,7 @@ module.exports = function(sequelize, DataTypes) {
       }
     },
     form54_3: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
@@ -1315,21 +1315,21 @@ module.exports = function(sequelize, DataTypes) {
       }
     },
     form52_3: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
       }
     },
     form41_3: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
       }
     },
     form37_3: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
@@ -1350,14 +1350,14 @@ module.exports = function(sequelize, DataTypes) {
       }
     },
     form35_3: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
       }
     },
     form15_4: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
@@ -1441,7 +1441,7 @@ module.exports = function(sequelize, DataTypes) {
       }
     },
     form16_4: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
@@ -1469,7 +1469,7 @@ module.exports = function(sequelize, DataTypes) {
       }
     },
     form11_5: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
@@ -1483,42 +1483,42 @@ module.exports = function(sequelize, DataTypes) {
       }
     },
     form17_5: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
       }
     },
     form21_5: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
       }
     },
     form19_5: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
       }
     },
     form20_5: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
       }
     },
     form16_5: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
       }
     },
     form18_5: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
@@ -1546,14 +1546,14 @@ module.exports = function(sequelize, DataTypes) {
       }
     },
     form12_5: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
       }
     },
     form9_5: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
@@ -1574,7 +1574,7 @@ module.exports = function(sequelize, DataTypes) {
       }
     },
     form14_5: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
@@ -1588,28 +1588,28 @@ module.exports = function(sequelize, DataTypes) {
       }
     },
     form10_5: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
       }
     },
     form8_5: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
       }
     },
     form13_5: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
       }
     },
     form15_5: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(128),
       allowNull: false,
       validate: {
         len: [1]
