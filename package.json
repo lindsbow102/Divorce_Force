@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -18,10 +19,13 @@
   },
   "homepage": "https://github.com/lindsbow102/Legal_Zoom#readme",
   "dependencies": {
+    "body-parser": "^1.18.2",
     "docxtemplater": "^3.6.2",
+    "express": "^4.16.3",
     "jszip": "^2.6.1",
     "jszip-utils": "0.0.2",
     "mysql2": "^1.5.3",
+    "path": "^0.12.7",
     "sequelize": "^4.37.6"
   },
   "devDependencies": {}
