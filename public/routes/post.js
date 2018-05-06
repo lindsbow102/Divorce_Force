@@ -6,7 +6,7 @@
 // =============================================================
 
 // Requiring our models
-var db = require("../models");
+var db = require("../../models/post.js");
 
 // Routes
 // =============================================================
@@ -75,4 +75,5 @@ module.exports = function (app) {
 //                 res.json(dbPost);
 //             });
 //     });
-// };
+// }
+};
