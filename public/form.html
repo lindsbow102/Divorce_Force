@@ -21,7 +21,8 @@
             Materialize.updateTextFields();
         });
     </script>
-
+    <script src="pdfobject.js"></script>
+    <script>pdfobject.embed("dissolution.pdf", "#result-pdf");</script>
 
     <title>Document</title>
 </head>
@@ -433,13 +434,12 @@
 
                     </form>
                 </div>
-
             </div>
         </div>
-<div id="result-pdf">
-        <script src="/pdfobject.js"></script>
-        <script>pdfobject.embed("/dissolution.pdf", "#example1");</script>
-</div>
+        <div id="result-pdf" style="height: 800px; width: 800px;">
+            PDF GOES HERE
+            <embed class="pdfobject" src="dissolution.pdf" type="application/pdf" style="overflow: auto; width: 100%; height: 100%;" internalinstanceid="26">
+            </div>
 
 </body>
 
