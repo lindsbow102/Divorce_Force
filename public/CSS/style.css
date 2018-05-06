@@ -1,5 +1,6 @@
 body {
-
+    background-image: url(../images/background.png);
+    background-size: cover;
 }
 
 .jumbotron {
@@ -11,6 +12,12 @@ body {
 .my-4 {
     border: 1px solid gray;
 }
+
+/*.non-jumbo {
+    background-image: url(../images/background.png);
+    width: 100%;
+    height: 100%;
+}*/
 
 footer {
     text-align: center;
