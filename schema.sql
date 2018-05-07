@@ -1,5 +1,5 @@
 
--- Creates the "blogger" database --
+-- Creates the "divorce_force" database --
 CREATE DATABASE divorce_forcedb;
 
 --And use it--
