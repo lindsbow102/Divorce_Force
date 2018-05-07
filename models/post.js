@@ -1647,6 +1647,10 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.STRING(128),
       allowNull: true,
     },
+    formOI2_1: {
+      type: DataTypes.STRING(128),
+      allowNull: true,
+    }
   });
 
   // Post.associate = function(models) {
