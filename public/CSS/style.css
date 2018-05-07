@@ -32,11 +32,3 @@ footer {
 .card {
     text-align: center;
 }
-
-#result-pdf {
-    max-width: 100%;
-	width: 600px;
-	height: 600px;
-	border: 10px solid rgba(0,0,0,.4);
-    margin: auto;
-}
