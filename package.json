@@ -26,7 +26,9 @@
     "jszip-utils": "0.0.2",
     "mysql2": "^1.5.3",
     "path": "^0.12.7",
-    "sequelize": "^4.37.6"
+    "pdfobject": "^2.0.201604172",
+    "sequelize": "^4.37.6",
+    "pdf-form-fill": "^0.2.1"
   },
   "devDependencies": {}
 }
