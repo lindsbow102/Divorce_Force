@@ -1,6 +1,6 @@
+DROP DATABASE IF EXISTS divorce_forcedb;
 
--- Creates the "blogger" database --
+-- Creates the "divorce force" database --
 CREATE DATABASE divorce_forcedb;
 
---And use it--
 USE divorce_forcedb;
