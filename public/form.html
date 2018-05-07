@@ -8,23 +8,16 @@
     <!-- Link to the jQuery Library -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
-    <!-- Compiled and minified CSS -->
+    <!-- Compiled and minified Materialize CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 
-    <!-- Compiled and minified JavaScript -->
+    <!-- Compiled and minified Materialize JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <script src="/pdfobject.js"></script>
     <script src="https://code.jquery.com/jquery.js"></script>
-    <script type="text/javascript"></script>
-    <script>
-        $(document).ready(function () {
-            Materialize.updateTextFields();
-        });
-    </script>
-    <script src="pdfobject.js"></script>
     
 
-    <title>Document</title>
+    <title>Marriage Dissolution Form</title>
 </head>
 
 <body>
@@ -442,6 +435,15 @@
             PDF GOES HERE
             <embed class="pdfobject" src="templates/dissolution.pdf" type="application/pdf" style="overflow: auto; width: 100%; height: 100%;" internalinstanceid="26">
         </div>
+        <script src="pdfobject.js"></script>
+        <script type="text/javascript"></script>
+    <script>
+        $(document).ready(function () {
+            Materialize.updateTextFields();
+        });
+    </script>
+    
+    
             
 
 </body>
