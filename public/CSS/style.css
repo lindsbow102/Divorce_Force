@@ -17,15 +17,6 @@ body {
     border: 1px solid gray;
 }
 
-<<<<<<< HEAD
-=======
-/*.non-jumbo {
-    background-image: url(../images/background.png);
-    width: 100%;
-    height: 100%;
-}*/
-
->>>>>>> 54d523068e0cd12998ab236cbe7a9555d77719d3
 footer {
     text-align: center;
     position: fixed;
@@ -36,13 +27,7 @@ footer {
     padding-top: 5px;
     padding-bottom: 5px;
 }
-<<<<<<< HEAD
-
 .card {
     text-align: center;
+    margin-bottom: 50px;
 }
-=======
-.card {
-    text-align: center;
-}
->>>>>>> 54d523068e0cd12998ab236cbe7a9555d77719d3
