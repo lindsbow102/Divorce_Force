@@ -22,7 +22,7 @@
         });
     </script>
     <script src="pdfobject.js"></script>
-    <script>pdfobject.embed("dissolution.pdf", "#result-pdf");</script>
+    
 
     <title>Document</title>
 </head>
@@ -423,23 +423,26 @@
                         />
                         <input id="form81_2" type="text" tabindex="135" value="" data-objref="467 0 R" title="Lien Holder" data-field-name="Lien Holder DRDA10f"
                         />
+                        <button type=" submit " class="btn btn-primary" id="form-submit">Submit</button>
                 </form>
 
 
                 </div>
 
 
-                <button type=" submit " class="btn btn-primary" id="form-submit">Submit</button>
+                
                 <div class="form-check ">
 
                     </form>
                 </div>
             </div>
         </div>
-        <div id="result-pdf" style="height: 800px; width: 800px;">
+        <!-- Div to hold the rendered pdf -->
+        <div id="result-pdf" style="max-width: 100%; width: 900px; height: 600px; border: 10px solid rgba(0,0,0,.4); margin: auto;">
             PDF GOES HERE
             <embed class="pdfobject" src="templates/dissolution.pdf" type="application/pdf" style="overflow: auto; width: 100%; height: 100%;" internalinstanceid="26">
-            </div>
+        </div>
+            
 
 </body>
 

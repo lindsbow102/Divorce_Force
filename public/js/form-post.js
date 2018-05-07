@@ -1,3 +1,25 @@
+$("#form-submit").on("submit", function (event) {
+    // Make sure to preventDefault on a submit event.
+    event.preventDefault();
+    console.log(req.body);
+    var newForm = req.body;
+    console.log(newForm);
+    // Send the POST request.
+    $.post("/api/posts", post, function() {
+        type: "POST";
+        data: req.body;
+    }).then(
+        function () {
+            //!!!REMOVE AFTER DEBUGGING
+            console.log("Created new form");
+            // Reload the page to get the updated list
+            location.reload();
+        }
+    );
+});
+
+
+
 $(document).ready(function () {
     /* global moment */
     // Click events for the submit button

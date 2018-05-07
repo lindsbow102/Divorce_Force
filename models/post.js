@@ -1627,5 +1627,5 @@ module.exports = function(sequelize, DataTypes) {
   //   });
   // };
 
-  // return form_data;
+  return form_data;
 };
