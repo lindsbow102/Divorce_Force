@@ -378,98 +378,6 @@ module.exports = function(sequelize, DataTypes) {
         //len: [1]
       }
     },
-<<<<<<< HEAD
-    form95_2: {
-      type: DataTypes.STRING(128),
-      allowNull:true,
-      validate: {
-        //len: [1]
-      }
-    },
-    form47_2: {
-      type: DataTypes.STRING(20),
-      allowNull:true,
-      validate: {
-        //len: [1]
-      }
-    },
-    form12_2: {
-      type: DataTypes.STRING(20),
-      allowNull:true,
-      validate: {
-        //len: [1]
-      }
-    },form93_2: {
-      type: DataTypes.STRING(128),
-      allowNull:true,
-      validate: {
-        //len: [1]
-      }
-    },
-    form29_2: {
-      type: DataTypes.STRING(20),
-      allowNull:true,
-      validate: {
-        //len: [1]
-      }
-    },
-    form13_2: {
-      type: DataTypes.STRING(20),
-      allowNull:true,
-      validate: {
-        //len: [1]
-      }
-    },
-    form84_2: {
-      type: DataTypes.STRING(128),
-      allowNull:true,
-      validate: {
-        //len: [1]
-      }
-    },
-    form52_2: {
-      type: DataTypes.STRING(20),
-      allowNull:true,
-      validate: {
-        //len: [1]
-      }
-    },
-    form18_2: {
-      type: DataTypes.STRING(20),
-      allowNull:true,
-      validate: {
-        //len: [1]
-      }
-    },
-    form102_2: {
-      type: DataTypes.STRING(128),
-      allowNull:true,
-      validate: {
-        //len: [1]
-      }
-    },
-    form48_2: {
-      type: DataTypes.STRING(20),
-      allowNull:true,
-      validate: {
-        //len: [1]
-      }
-    },
-    form25_2: {
-      type: DataTypes.STRING(20),
-      allowNull:true,
-      validate: {
-        //len: [1]
-      }
-    },
-    form43_2: {
-      type: DataTypes.STRING(20),
-      allowNull:true,
-      validate: {
-        //len: [1]
-      }
-    },
-=======
     // form95_2: {
     //   type: DataTypes.STRING(128),
     //   allowNull:true,
@@ -478,14 +386,14 @@ module.exports = function(sequelize, DataTypes) {
     //   }
   // },
     // form47_2: {
-    //   type: DataTypes.INTEGER,
+    //   type: DataTypes.STRING(20),
     //   allowNull:true,
     //   validate: {
     //     len: [1]
     //   }
     // },
     // form12_2: {
-    //   type: DataTypes.INTEGER,
+    //   type: DataTypes.STRING(20),
     //   allowNull:true,
     //   validate: {
     //     len: [1]
@@ -498,14 +406,14 @@ module.exports = function(sequelize, DataTypes) {
     //   }
     // },
     // form29_2: {
-    //   type: DataTypes.INTEGER,
+    //   type: DataTypes.STRING(20),
     //   allowNull:true,
     //   validate: {
     //     len: [1]
     //   }
     // },
     // form13_2: {
-    //   type: DataTypes.INTEGER,
+    //   type: DataTypes.STRING(20),
     //   allowNull:true,
     //   validate: {
     //     len: [1]
@@ -519,14 +427,14 @@ module.exports = function(sequelize, DataTypes) {
     //   }
     // },
     // form52_2: {
-    //   type: DataTypes.INTEGER,
+    //   type: DataTypes.STRING(20),
     //   allowNull:true,
     //   validate: {
     //     len: [1]
     //   }
     // },
     // form18_2: {
-    //   type: DataTypes.INTEGER,
+    //   type: DataTypes.STRING(20),
     //   allowNull:true,
     //   validate: {
     //     len: [1]
@@ -540,27 +448,26 @@ module.exports = function(sequelize, DataTypes) {
     //   }
     // },
     // form48_2: {
-    //   type: DataTypes.INTEGER,
+    //   type: DataTypes.STRING(20),
     //   allowNull:true,
     //   validate: {
     //     len: [1]
     //   }
     // },
     // form25_2: {
-    //   type: DataTypes.INTEGER,
+    //   type: DataTypes.STRING(20),
     //   allowNull:true,
     //   validate: {
     //     len: [1]
     //   }
     // },
     // form43_2: {
-    //   type: DataTypes.INTEGER,
+    //   type: DataTypes.STRING(20),
     //   allowNull:true,
     //   validate: {
     //     len: [1]
     //   }
     // },
->>>>>>> 68854834f88d9a7ebd3c9707bcb732b8f1835df5
     form92_2: {
       type: DataTypes.STRING(128),
       allowNull:true,
@@ -582,316 +489,6 @@ module.exports = function(sequelize, DataTypes) {
         //len: [1]
       }
     },
-<<<<<<< HEAD
-    form100_2: {
-      type: DataTypes.STRING(128),
-      allowNull:true,
-      validate: {
-        //len: [1]
-      }
-    },
-    form41_2: {
-      type: DataTypes.STRING(20),
-      allowNull:true,
-      validate: {
-        //len: [1]
-      }
-    },
-    form5_2: {
-      type: DataTypes.STRING(20),
-      allowNull:true,
-      validate: {
-        //len: [1]
-      }
-    },
-    form91_2: {
-      type: DataTypes.STRING(128),
-      allowNull:true,
-      validate: {
-        //len: [1]
-      }
-    },
-    form98_2: {
-      type: DataTypes.STRING(128),
-      allowNull:true,
-      validate: {
-        //len: [1]
-      }
-    },
-    form97_2: {
-      type: DataTypes.STRING(128),
-      allowNull:true,
-      validate: {
-        //len: [1]
-      }
-    },
-    // form88_2: {
-    //   type: DataTypes.STRING(20),
-    //   allowNull:true,
-    //   validate: {
-    //     //len: [1]
-    //   }
-    // },
-    form87_2: {
-      type: DataTypes.STRING(128),
-      allowNull:true,
-      validate: {
-        //len: [1]
-      }
-    },
-    form86_2: {
-      type: DataTypes.STRING(128),
-      allowNull:true,
-      validate: {
-        //len: [1]
-      }
-    },
-    form94_2: {
-      type: DataTypes.STRING(128),
-      allowNull:true,
-      validate: {
-        //len: [1]
-      }
-    },
-    form71_2: {
-      type: DataTypes.STRING(128),
-      allowNull:true,
-      validate: {
-        //len: [1]
-      }
-    },
-    form63_2: {
-      type: DataTypes.STRING(128),
-      allowNull:true,
-      validate: {
-        //len: [1]
-      }
-    },
-    form70_2: {
-      type: DataTypes.STRING(128),
-      allowNull:true,
-      validate: {
-        //len: [1]
-      }
-    },
-    form69_2: {
-      type: DataTypes.STRING(128),
-      allowNull:true,
-      validate: {
-        //len: [1]
-      }
-    },
-    form59_2: {
-      type: DataTypes.STRING(20),
-      allowNull:true,
-      validate: {
-        //len: [1]
-      }
-    },
-    form68_2: {
-      type: DataTypes.STRING(20),
-      allowNull:true,
-      validate: {
-        //len: [1]
-      }
-    },
-    form58_2: {
-      type: DataTypes.STRING(20),
-      allowNull:true,
-      validate: {
-        //len: [1]
-      }
-    },
-    form67_2: {
-      type: DataTypes.STRING(20),
-      allowNull:true,
-      validate: {
-        //len: [1]
-      }
-    },
-    form26_2: {
-      type: DataTypes.STRING(128),
-      allowNull:true,
-      validate: {
-        //len: [1]
-      }
-    },
-    form3_2: {
-      type: DataTypes.STRING(128),
-      allowNull:true,
-      validate: {
-        //len: [1]
-      }
-    },
-    form57_2: {
-      type: DataTypes.STRING(128),
-      allowNull:true,
-      validate: {
-        //len: [1]
-      }
-    },
-    form39_2: {
-      type: DataTypes.STRING(128),
-      allowNull:true,
-      validate: {
-        //len: [1]
-      }
-    },
-    form16_2: {
-      type: DataTypes.STRING(128),
-      allowNull:true,
-      validate: {
-        //len: [1]
-      }
-    },
-    form77_2: {
-      type: DataTypes.STRING(128),
-      allowNull:true,
-      validate: {
-        //len: [1]
-      }
-    },
-    form51_2: {
-      type: DataTypes.STRING(128),
-      allowNull:true,
-      validate: {
-        //len: [1]
-      }
-    },
-    form21_2: {
-      type: DataTypes.STRING(128),
-      allowNull:true,
-      validate: {
-        //len: [1]
-      }
-    },
-    form76_2: {
-      type: DataTypes.STRING(128),
-      allowNull:true,
-      validate: {
-        //len: [1]
-      }
-    },
-    form27_2: {
-      type: DataTypes.STRING(128),
-      allowNull:true,
-      validate: {
-        //len: [1]
-      }
-    },
-    form7_2: {
-      type: DataTypes.STRING(128),
-      allowNull:true,
-      validate: {
-        //len: [1]
-      }
-    },
-    form65_2: {
-      type: DataTypes.STRING(128),
-      allowNull:true,
-      validate: {
-        //len: [1]
-      }
-    },
-    form45_2: {
-      type: DataTypes.STRING(128),
-      allowNull:true,
-      validate: {
-        //len: [1]
-      }
-    },
-    form31_2: {
-      type: DataTypes.STRING(128),
-      allowNull:true,
-      validate: {
-        //len: [1]
-      }
-    },
-    form4_2: {
-      type: DataTypes.STRING(128),
-      allowNull:true,
-      validate: {
-        //len: [1]
-      }
-    },
-    form64_2: {
-      type: DataTypes.STRING(20),
-      allowNull:true,
-      validate: {
-        //len: [1]
-      }
-    },
-    form37_2: {
-      type: DataTypes.STRING(20),
-      allowNull:true,
-      validate: {
-        //len: [1]
-      }
-    },
-    form22_2: {
-      type: DataTypes.STRING(20),
-      allowNull:true,
-      validate: {
-        //len: [1]
-      }
-    },
-    form62_2: {
-      type: DataTypes.STRING(128),
-      allowNull:true,
-      validate: {
-        //len: [1]
-      }
-    },
-    form50_2: {
-      type: DataTypes.STRING(20),
-      allowNull:true,
-      validate: {
-        //len: [1]
-      }
-    },
-    form24_2: {
-      type: DataTypes.STRING(20),
-      allowNull:true,
-      validate: {
-        //len: [1]
-      }
-    },
-    form75_2: {
-      type: DataTypes.STRING(20),
-      allowNull:true,
-      validate: {
-        //len: [1]
-      }
-    },
-    form19_2: {
-      type: DataTypes.STRING(20),
-      allowNull:true,
-      validate: {
-        //len: [1]
-      }
-    },
-    form1_2: {
-      type: DataTypes.STRING(20),
-      allowNull:true,
-      validate: {
-        //len: [1]
-      }
-    },
-    form61_2: {
-      type: DataTypes.STRING(128),
-      allowNull:true,
-      validate: {
-        //len: [1]
-      }
-    },
-    form32_2: {
-      type: DataTypes.STRING(20),
-      allowNull:true,
-      validate: {
-        //len: [1]
-      }
-    },
-=======
     // form100_2: {
     //   type: DataTypes.STRING(128),
     //   allowNull:true,
@@ -900,14 +497,14 @@ module.exports = function(sequelize, DataTypes) {
     //   }
     // },
     // form41_2: {
-    //   type: DataTypes.INTEGER,
+    //   type: DataTypes.STRING(20),
     //   allowNull:true,
     //   validate: {
     //     len: [1]
     //   }
     // },
     // form5_2: {
-    //   type: DataTypes.INTEGER,
+    //   type: DataTypes.STRING(20),
     //   allowNull:true,
     //   validate: {
     //     len: [1]
@@ -935,7 +532,7 @@ module.exports = function(sequelize, DataTypes) {
     //   }
     // },
     // form88_2: {
-    //   type: DataTypes.INTEGER,
+    //   type: DataTypes.STRING(20),
     //   allowNull:true,
     //   validate: {
     //     len: [1]
@@ -991,28 +588,28 @@ module.exports = function(sequelize, DataTypes) {
     //   }
     // },
     // form59_2: {
-    //   type: DataTypes.INTEGER,
+    //   type: DataTypes.STRING(20),
     //   allowNull:true,
     //   validate: {
     //     len: [1]
     //   }
     // },
     // form68_2: {
-    //   type: DataTypes.INTEGER,
+    //   type: DataTypes.STRING(20),
     //   allowNull:true,
     //   validate: {
     //     len: [1]
     //   }
     // },
     // form58_2: {
-    //   type: DataTypes.INTEGER,
+    //   type: DataTypes.STRING(20),
     //   allowNull:true,
     //   validate: {
     //     len: [1]
     //   }
     // },
     // form67_2: {
-    //   type: DataTypes.INTEGER,
+    //   type: DataTypes.STRING(20),
     //   allowNull:true,
     //   validate: {
     //     len: [1]
@@ -1124,21 +721,21 @@ module.exports = function(sequelize, DataTypes) {
     //   }
     // },
     // form64_2: {
-    //   type: DataTypes.INTEGER,
+    //   type: DataTypes.STRING(20),
     //   allowNull:true,
     //   validate: {
     //     len: [1]
     //   }
     // },
     // form37_2: {
-    //   type: DataTypes.INTEGER,
+    //   type: DataTypes.STRING(20),
     //   allowNull:true,
     //   validate: {
     //     len: [1]
     //   }
     // },
     // form22_2: {
-    //   type: DataTypes.INTEGER,
+    //   type: DataTypes.STRING(20),
     //   allowNull:true,
     //   validate: {
     //     len: [1]
@@ -1152,35 +749,35 @@ module.exports = function(sequelize, DataTypes) {
     //   }
     // },
     // form50_2: {
-    //   type: DataTypes.INTEGER,
+    //   type: DataTypes.STRING(20),
     //   allowNull:true,
     //   validate: {
     //     len: [1]
     //   }
     // },
     // form24_2: {
-    //   type: DataTypes.INTEGER,
+    //   type: DataTypes.STRING(20),
     //   allowNull:true,
     //   validate: {
     //     len: [1]
     //   }
     // },
     // form75_2: {
-    //   type: DataTypes.INTEGER,
+    //   type: DataTypes.STRING(20),
     //   allowNull:true,
     //   validate: {
     //     len: [1]
     //   }
     // },
     // form19_2: {
-    //   type: DataTypes.INTEGER,
+    //   type: DataTypes.STRING(20),
     //   allowNull:true,
     //   validate: {
     //     len: [1]
     //   }
     // },
     // form1_2: {
-    //   type: DataTypes.INTEGER,
+    //   type: DataTypes.STRING(20),
     //   allowNull:true,
     //   validate: {
     //     len: [1]
@@ -1194,13 +791,12 @@ module.exports = function(sequelize, DataTypes) {
     //   }
     // },
     // form32_2: {
-    //   type: DataTypes.INTEGER,
+    //   type: DataTypes.STRING(20),
     //   allowNull:true,
     //   validate: {
     //     len: [1]
     //   }
     // },
->>>>>>> 68854834f88d9a7ebd3c9707bcb732b8f1835df5
     form99_2: {
       type: DataTypes.STRING(20),
       allowNull:true,
@@ -1229,73 +825,15 @@ module.exports = function(sequelize, DataTypes) {
         //len: [1]
       }
     },
-<<<<<<< HEAD
-    form44_2: {
-      type: DataTypes.STRING(20),
-      allowNull:true,
-      validate: {
-        //len: [1]
-      }
-    },
-    form14_2: {
-      type: DataTypes.STRING(20),
-      allowNull:true,
-      validate: {
-        //len: [1]
-      }
-    },
-    form96_2: {
-      type: DataTypes.STRING(128),
-      allowNull:true,
-      validate: {
-        //len: [1]
-      }
-    },
-    form74_2: {
-      type: DataTypes.STRING(128),
-      allowNull:true,
-      validate: {
-        //len: [1]
-      }
-    },
-    form60_2: {
-      type: DataTypes.STRING(128),
-      allowNull:true,
-      validate: {
-        //len: [1]
-      }
-    },
-    form30_2: {
-      type: DataTypes.STRING(20),
-      allowNull:true,
-      validate: {
-        //len: [1]
-      }
-    },
-    form17_2: {
-      type: DataTypes.STRING(20),
-      allowNull:true,
-      validate: {
-        //len: [1]
-      }
-    },
-    form73_2: {
-      type: DataTypes.STRING(128),
-      allowNull:true,
-      validate: {
-        //len: [1]
-      }
-    },
-=======
     // form44_2: {
-    //   type: DataTypes.INTEGER,
+    //   type: DataTypes.STRING(20),
     //   allowNull:true,
     //   validate: {
     //     len: [1]
     //   }
     // },
     // form14_2: {
-    //   type: DataTypes.INTEGER,
+    //   type: DataTypes.STRING(20),
     //   allowNull:true,
     //   validate: {
     //     len: [1]
@@ -1323,14 +861,14 @@ module.exports = function(sequelize, DataTypes) {
     //   }
     // },
     // form30_2: {
-    //   type: DataTypes.INTEGER,
+    //   type: DataTypes.STRING(20),
     //   allowNull:true,
     //   validate: {
     //     len: [1]
     //   }
     // },
     // form17_2: {
-    //   type: DataTypes.INTEGER,
+    //   type: DataTypes.STRING(20),
     //   allowNull:true,
     //   validate: {
     //     len: [1]
@@ -1343,7 +881,6 @@ module.exports = function(sequelize, DataTypes) {
     //     len: [1]
     //   }
     // }
->>>>>>> 68854834f88d9a7ebd3c9707bcb732b8f1835df5
     form36_2: {
       type: DataTypes.STRING(20),
       allowNull:true,
