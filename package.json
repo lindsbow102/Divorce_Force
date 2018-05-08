@@ -2,7 +2,23 @@
   "name": "Legal_Zoom",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "docx": "^3.4.0",
+    "docxtemplater": "^3.6.2",
+    "express": "^4.16.3",
+    "jszip": "^2.6.1",
+    "jszip-utils": "0.0.2",
+    "mysql2": "^1.5.3",
+    "path": "^0.12.7",
+    "pdf-form-fill": "^0.2.1",
+    "pdffiller-stream": "^0.2.0",
+    "pdfobject": "^2.0.201604172",
+    "pdftk": "^0.0.0-rc.0",
+    "sequelize": "^4.37.7"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
@@ -17,21 +33,5 @@
   "bugs": {
     "url": "https://github.com/lindsbow102/Legal_Zoom/issues"
   },
-  "homepage": "https://github.com/lindsbow102/Legal_Zoom#readme",
-  "dependencies": {
-    "body-parser": "^1.18.2",
-    "docx": "^3.4.0",
-    "docxtemplater": "^3.6.2",
-    "express": "^4.16.3",
-    "jszip": "^2.6.1",
-    "jszip-utils": "0.0.2",
-    "mysql2": "^1.5.3",
-    "path": "^0.12.7",
-    "pdf-form-fill": "^0.2.1",
-    "pdffiller-stream": "^0.2.0",
-    "pdfobject": "^2.0.201604172",
-    "pdftk": "0.0.0-rc.0",
-    "sequelize": "^4.37.6"
-  },
-  "devDependencies": {}
+  "homepage": "https://github.com/lindsbow102/Legal_Zoom#readme"
 }
