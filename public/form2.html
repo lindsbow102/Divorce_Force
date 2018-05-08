@@ -105,23 +105,34 @@
                                         <label for="form4_1">Respondent</label>
                                         <br>
 
-                                        <label for="form18_1">Name of Petitioner</label>
-                                        <input class="form-control" id="form18_1" type="text" tabindex="12" value="" data-objref="296 0 R" title="Name of Petitioner"
-                                            data-field-name="petitioner_name">
+                                        <div class="input-field">
+                                            <label for="form18_1">Name of Petitioner</label>
+                                            <input class="form-control" id="form18_1" type="text" tabindex="12" value="" data-objref="296 0 R" title="Name of Petitioner"
+                                                data-field-name="petitioner_name">
+                                        </div>
 
-                                        <label for="form11_1">Case Number</label>
-                                        <input class="form-control" id="form11_1" type="text" tabindex="13" value="" data-objref="297 0 R" title="Case Number" data-field-name="case_number">
+                                        <div class="input-field">
+                                            <label for="form11_1">Case Number</label>
+                                            <input class="form-control" id="form11_1" type="text" tabindex="13" value="" data-objref="297 0 R" title="Case Number" data-field-name="case_number">
+                                        </div>
 
-                                        <label for="form17_1">Name of Respondent</label>
-                                        <input class="form-control" id="form17_1" type="text" tabindex="14" value="" data-objref="298 0 R" title="Name of Respondent"
-                                            data-field-name="respondent_name">
+                                        <div class="input-field">
+                                            <label for="form17_1">Name of Respondent</label>
+                                            <input class="form-control" id="form17_1" type="text" tabindex="14" value="" data-objref="298 0 R" title="Name of Respondent"
+                                                data-field-name="respondent_name">
+                                        </div>
 
-                                        <label for="form12_1">Assigned to Judge: </label>
-                                        <input class="form-control" id="form12_1" type="text" tabindex="15" value="" data-objref="299 0 R" title="Assigned to" data-field-name="judge">
+                                        <div class="input-field">
+                                            <label for="form12_1">Assigned to Judge: </label>
+                                            <input class="form-control" id="form12_1" type="text" tabindex="15" value="" data-objref="299 0 R" title="Assigned to" data-field-name="judge">
+                                        </div>
 
-                                        <label for="form10_1">Case will be ready for trial on or after: </label>
-                                        <input class="form-control" id="form10_1" type="text" tabindex="16" value="" data-objref="300 0 R" title="case for trial. My case will be ready for trial on or after"
-                                            data-field-name="trial_ready_date">
+
+                                        <div class="input-field">
+                                            <label for="form10_1">Case will be ready for trial on or after: </label>
+                                            <input class="form-control" id="form10_1" type="text" tabindex="16" value="" data-objref="300 0 R" title="case for trial. My case will be ready for trial on or after"
+                                                data-field-name="trial_ready_date">
+                                        </div>
 
                                         <input class="form-control" id="form7_1" type="checkbox" tabindex="21" data-objref="305 0 R" data-field-name="set_case_for_trial"
                                             imagename="1/form/305 0 R" images="110100" data-imageadded="true" style="display: none;">
@@ -295,21 +306,21 @@
 
                     </form>
                 </div>
-                </div>
             </div>
-                <!-- Div to hold the rendered pdf -->
-            <div id="result-pdf" style="max-width: 100%; width: 900px; height: 600px; border: 10px solid rgba(0,0,0,.4); margin: auto;">
-                    PDF VERSION
-                    <embed class="pdfobject" src="templates/set-trial-motion.pdf" type="application/pdf" style="overflow: auto; width: 100%; height: 100%;"
-                        internalinstanceid="26">
-                </div>
+        </div>
+        <!-- Div to hold the rendered pdf -->
+        <div id="result-pdf" style="max-width: 100%; width: 900px; height: 600px; border: 10px solid rgba(0,0,0,.4); margin: auto;">
+            PDF VERSION
+            <embed class="pdfobject" src="templates/set-trial-motion.pdf" type="application/pdf" style="overflow: auto; width: 100%; height: 100%;"
+                internalinstanceid="26">
+        </div>
 
-                <script type="text/javascript"></script>
-                <script>
-                    $(document).ready(function () {
-                        Materialize.updateTextFields();
-                    });
-                </script>
+        <script type="text/javascript"></script>
+        <script>
+            $(document).ready(function () {
+                Materialize.updateTextFields();
+            });
+        </script>
 
 </body>
 
