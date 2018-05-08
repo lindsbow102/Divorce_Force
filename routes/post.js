@@ -2,7 +2,8 @@
 // =============================================================
 
 // Require the models
-var db = require("../../models");
+var db = require("../models")
+, user = require('../routes/user');
 
 // Routes
 // =============================================================
@@ -17,7 +18,7 @@ module.exports = function (app) {
         }
         db.form_data.findAll({
         }).then(function (dbPost) {
-            
+
             res.json(dbPost);
         });
     });
@@ -55,4 +56,8 @@ module.exports = function (app) {
             res.json(dbPost);
         });
     });
+
+    app.post('/signup', user.signup);//call for signup post 
+
+    app.post('/login', user.login);//call for login post
 }
