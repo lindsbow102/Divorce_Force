@@ -12,6 +12,7 @@
     "express-session": "^1.15.6",
     "jszip": "^2.6.1",
     "jszip-utils": "0.0.2",
+    "mysql": "^2.15.0",
     "mysql2": "^1.5.3",
     "path": "^0.12.7",
     "pdf-form-fill": "^0.2.1",
