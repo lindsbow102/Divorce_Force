@@ -1,22 +1,22 @@
 {
   "development": {
     "username": "root",
-    "password": "",
-    "database": "divorce_forcedb",
-    "host": "localhost",
+    "password": "root",
+    "database": "divorce_forceDB",
+    "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
-    "password": "",
-    "database": "divorce_forcedb",
+    "password": "root",
+    "database": "divorce_forceDB",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "production": {
     "username": "root",
-    "password": "",
-    "database": "divorce_forcedb",
+    "password": "root",
+    "database": "divorce_forceDB",
     "host": "127.0.0.1",
     "dialect": "mysql"
   }
