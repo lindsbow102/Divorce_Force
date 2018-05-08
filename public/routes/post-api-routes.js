@@ -39,7 +39,7 @@ module.exports = function(app) {
     db.Post.formdata.findOne({
       where: {
         id: req.params.id
-      // },
+       },
       // include: [db.User]
     }).then(function(dbPost) {
       console.log(dbPost);
