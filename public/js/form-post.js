@@ -1,19 +1,61 @@
-$("#form1").on("submit", function (event) {
+$("#form-submit").on("click", function (event) {
     // Make sure to preventDefault on a submit event.
     event.preventDefault();
     console.log( $(this));
+// =========================DOCUMENT FILLER SCRIPT=====================
+var JSZip = require('jszip');
+var Docxtemplater = require('docxtemplater');
+var db = require("../../models");
+var fs = require('fs');
+var path = require('path');
+
+//Load the docx file as a binary
+var content = fs
+    .readFileSync(path.resolve(__dirname, '../templates/dissolution.docx'), 'binary');
+
+var zip = new JSZip(content);
+
+var doc = new Docxtemplater();
+doc.loadZip(zip);
+
+var formdata1 = db.Post.findOne({
+    where: {
+    id: 1
+    },}).then(function(dbPost) {
+        doc.setData(formdataobj);
+        // console.log('DBFORMDATA LINE 21: ' + dbPost.formdata);
+        var formdataobj = JSON.parse(dbPost.formdata);
+        // console.log('CL LINE 23: ' + formdataobj);
+        doc.setData(
+            formdataobj
+        );
+        console.log('form-post.js line43, document creation script');
+        try {
+            // render the document (replace all occurences of {first_name} by John, {last_name} by Doe, ...)
+            doc.render()
+        }
+        catch (error) {
+            var e = {
+                message: error.message,
+                name: error.name,
+                stack: error.stack,
+                properties: error.properties,
+            }
+            console.log(JSON.stringify({ error: e }));
+            // The error thrown here contains additional information when logged with JSON.stringify (it contains a property object).
+            throw error;
+        }
+        
+        var buf = doc.getZip()
+            .generate({ type: 'nodebuffer' });
+        
+        // buf is a nodejs buffer, you can either write it to a file or do anything else with it.
+        fs.writeFileSync(path.resolve(__dirname, 'output' + Date.now() +'.docx'), buf);
+        
+    });
     
-//     // Send the POST request.
-//     $.post("/api/posts", post, function() {
-//     }).then(
-//         function () {
-//             //!!!REMOVE AFTER DEBUGGING
-//             console.log("Created new form");
-//             // Reload the page to get the updated list
-//             // location.reload();
-//         }
-//     );
-// });
+console.log(JSON.stringify(formdata1));
+// set the templateVariables
 
 
 
