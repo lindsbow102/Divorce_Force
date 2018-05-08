@@ -80,7 +80,12 @@ module.exports = function (app) {
 
                 // buf is a nodejs buffer, you can either write it to a file or do anything else with it.
                 var timestamp = Date.now();
-                fs.writeFileSync(path.resolve(__dirname, 'output' + timestamp + '.docx'), buf);
+                //ID FOR FORM FILENAME file-name
+                var docPath = 'routes/Output/output' + timestamp + '.docx'
+                console.log('Document path: '+ docPath);
+                $('#file-name').innerhtml('"href=' + docPath + '"');
+                console.log()
+                fs.writeFileSync(('routes/Output/output' + timestamp + '.docx'), buf);
             });
 
             console.log(JSON.stringify(formdata1));
