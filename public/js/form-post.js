@@ -5,7 +5,7 @@ $("#form-submit").on("click", function (event) {
 // =========================DOCUMENT FILLER SCRIPT=====================
 var JSZip = require('jszip');
 var Docxtemplater = require('docxtemplater');
-var db = require("../../models");
+var db = require("../models");
 var fs = require('fs');
 var path = require('path');
 
@@ -50,15 +50,15 @@ var formdata1 = db.Post.findOne({
             .generate({ type: 'nodebuffer' });
         
         // buf is a nodejs buffer, you can either write it to a file or do anything else with it.
-        fs.writeFileSync(path.resolve(__dirname, 'output' + Date.now() +'.docx'), buf);
+        var timestamp = Date.now();
+        fs.writeFileSync(path.resolve(__dirname, 'output' + timestamp +'.docx'), buf);
         
-    });
-    
+    });    
 console.log(JSON.stringify(formdata1));
-// set the templateVariables
 
 
 
+// ===================================================================
 $(document).ready(function () {
     /* global moment */
     // Click events for the submit button
