@@ -28,7 +28,8 @@ module.exports = function (app) {
     app.post("/api/posts", function (req, res) {
         req.body.formdata = JSON.stringify(req.body);
         db.Post.create(req.body).then(function (dbPost) {
-            console.log('post.js-line31');
+            console.log('Document ID: ' + dbPost.id)
+            var rowID = dbPost.id || 1;
 
             // ============== FORM CREATION AND FILL SCRIPT =============
             var JSZip = require('jszip');
@@ -48,7 +49,7 @@ module.exports = function (app) {
 
             var formdata1 = db.Post.findOne({
                 where: {
-                    id: 1
+                    id: rowID
                 },
             }).then(function (dbPost) {
                 doc.setData(formdataobj);
@@ -81,16 +82,13 @@ module.exports = function (app) {
                 // buf is a nodejs buffer, you can either write it to a file or do anything else with it.
                 var timestamp = Date.now();
                 //ID FOR FORM FILENAME file-name
-                var docPath = 'routes/Output/output' + timestamp + '.docx'
-                console.log('Document path: '+ docPath);
-                $('#file-name').innerhtml('"href=' + docPath + '"');
-                console.log()
-                fs.writeFileSync(('routes/Output/output' + timestamp + '.docx'), buf);
+                var docName = dbPost.document_name;
+                console.log('Document name: '+ docName);
+                // $('#file-name').innerHTML('"href=' + docPath + '"');
+                fs.writeFileSync(('public/Output/' + docName), buf);
             });
-
-            console.log(JSON.stringify(formdata1));
-
-            res.json(dbPost);
+            // console.log(JSON.stringify(formdata1));
+            res.json(docName);
         });
     });
 

@@ -9,6 +9,8 @@ var db = require("../models");
 var fs = require('fs');
 var path = require('path');
 
+
+
 //Load the docx file as a binary
 var content = fs
     .readFileSync(path.resolve(__dirname, '../templates/dissolution.docx'), 'binary');
@@ -29,7 +31,7 @@ var formdata1 = db.Post.findOne({
         doc.setData(
             formdataobj
         );
-        console.log('form-post.js line43, document creation script');
+        console.log('form-post.js line32, document creation script');
         try {
             // render the document (replace all occurences of {first_name} by John, {last_name} by Doe, ...)
             doc.render()
@@ -51,8 +53,9 @@ var formdata1 = db.Post.findOne({
         
         // buf is a nodejs buffer, you can either write it to a file or do anything else with it.
         var timestamp = Date.now();
+        console.log('publicJS');
         fs.writeFileSync(path.resolve(__dirname, 'output' + timestamp +'.docx'), buf);
-        
+        // $('#file-name').innerHTML('"href=' + docPath + '"');
     });    
 console.log(JSON.stringify(formdata1));
 
@@ -182,4 +185,5 @@ $(document).ready(function () {
         blogContainer.append(messageH2);
     }
 
-});
+})
+})

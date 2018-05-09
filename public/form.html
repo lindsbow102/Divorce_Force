@@ -413,6 +413,7 @@
                                             <input class="form-id" name="formV1-2" type="text" tabindex="x" data-objref="391 0 R" data-field-name="Check_Box23_DRDA10f"
                                                 imageName="2/form/391 0 R" images="110100" />
                                         </div>
+                                        
 
                                         <br>
 
@@ -871,6 +872,8 @@
                                                 data-field-name="other_orders" />
                                         </div>
                         </ul>
+                        <div><input name="document_name" type="text" id="document_name">
+                        </div>
                         <button type=" submit " class="btn btn-primary" id="form-submit">Submit</button>
 
                 </form>
@@ -886,24 +889,41 @@
                 </div>
                 </div>
             </div>
+            <div id="doc-link">
+                Link goes here
+            </div>
             <!-- Div to hold the rendered pdf -->
             <div id="result-pdf" style="max-width: 100%; width: 900px; height: 600px; border: 10px solid rgba(0,0,0,.4); margin: auto;">
                 PDF VERSION
                 <embed class="pdfobject" src="templates/dissolution.pdf" type="application/pdf" style="overflow: auto; width: 100%; height: 100%; padding-bottom: 3%;"
                     internalinstanceid="26">
             </div>
+            
             <footer>
                 <div>Copyright &copy; Divorce Force 2018</div>
             </footer>
+            
 
-            <script type="text/javascript"></script>
-            <script>
+            <script type="text/javascript">
+            
+            var timestamp = Date.now();
+                    
+                    //ID FOR FORM FILENAME file-name
+                    var docName = 'output-' + timestamp + '.docx'
+                    $("#document_name").attr("value", docName);
+                    console.log('Documentname: ' + docName)
+                var link = '<a href="/Output/' + docName + '">Click here to download your file </a>';
+                alert(link);
+                $("#doc-link").html(link);
                 $(document).ready(function () {
+                    
+
+                    
                     Materialize.updateTextFields();
                     $('.collapsible').collapsible();
                     $('.modal').modal();
-          
-                });
+                    });
+                
 
                 $('.modal').modal({
                     dismissible: true, // Modal can be dismissed by clicking outside of the modal

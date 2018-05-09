@@ -1657,6 +1657,10 @@ module.exports = function(sequelize, DataTypes) {
     formOI2_1: {
       type: DataTypes.STRING(128),
       allowNull: true,
+    },
+    document_name: {
+      type: DataTypes.STRING(128),
+      allowNull: true,
     }
   });
 
