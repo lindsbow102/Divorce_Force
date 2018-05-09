@@ -19,7 +19,7 @@ module.exports = function (app) {
         db.form_data.findAll({
         }).then(function (dbPost) {
 
-            res.json(dbPost);
+            res.json("Successfully submitted");
         });
     });
 
@@ -90,7 +90,77 @@ module.exports = function (app) {
             // console.log(JSON.stringify(formdata1));
             res.json(docName);
         });
-    });
+    
+
+
+// ==========================================FORM 2 SCRIPT===========================================
+req.body.formdata = JSON.stringify(req.body);
+        db.Post.create(req.body).then(function (dbPost) {
+            console.log('Document ID: ' + dbPost.id)
+            var rowID = dbPost.id || 1;
+
+            // ============== FORM CREATION AND FILL SCRIPT =============
+            var JSZip = require('jszip');
+            var Docxtemplater = require('docxtemplater');
+            var db = require("../models");
+            var fs = require('fs');
+            var path = require('path');
+
+            //Load the docx file as a binary
+            var content = fs
+                .readFileSync(path.resolve(__dirname, '../public/templates/set-trial.docx'), 'binary');
+
+            var zip = new JSZip(content);
+
+            var doc = new Docxtemplater();
+            doc.loadZip(zip);
+
+            var formdata1 = db.Post.findOne({
+                where: {
+                    id: rowID
+                },
+            }).then(function (dbPost) {
+                doc.setData(formdataobj);
+                // console.log('DBFORMDATA LINE 21: ' + dbPost.formdata);
+                var formdataobj = JSON.parse(dbPost.formdata);
+                // console.log('CL LINE 23: ' + formdataobj);
+                doc.setData(
+                    formdataobj
+                );
+                console.log('form-post.js line130, document2 creation script');
+                try {
+                    // render the document (replace all occurences of {first_name} by John, {last_name} by Doe, ...)
+                    doc.render()
+                }
+                catch (error) {
+                    var e = {
+                        message: error.message,
+                        name: error.name,
+                        stack: error.stack,
+                        properties: error.properties,
+                    }
+                    console.log(JSON.stringify({ error: e }));
+                    // The error thrown here contains additional information when logged with JSON.stringify (it contains a property object).
+                    throw error;
+                }
+
+                var buf = doc.getZip()
+                    .generate({ type: 'nodebuffer' });
+
+                // buf is a nodejs buffer, you can either write it to a file or do anything else with it.
+                var timestamp = Date.now();
+                //ID FOR FORM FILENAME file-name
+                var docName2 = 'form2-' + dbPost.document_name;
+                console.log('Document name: '+ docName2);
+                // $('#file-name').innerHTML('"href=' + docPath + '"');
+                fs.writeFileSync(('public/Output/' + docName2), buf);
+            });
+            // console.log(JSON.stringify(formdata1));
+            res.json(docName);
+        });
+
+});
+
 
     // DELETE route for deleting posts
     app.delete("/api/posts/:id", function (req, res) {

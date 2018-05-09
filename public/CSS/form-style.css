@@ -82,9 +82,28 @@ nav {
     padding-bottom: 4%;
     margin-top: 1%;
     margin-bottom: 2%;
+    margin-left: 15%;
+}
+#linkbtn2 {
+    color: white;
+    font-weight: bold;
+    /* background-color: #11dfcd; */
+    background: linear-gradient(rgba(41, 169, 192, 0.9) 30%, rgba(81, 209, 242, 0.8));
+    margin: auto;
+    padding-top: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 4%;
+    margin-top: 1%;
+    margin-bottom: 2%;
     margin-left: 5%;
 }
 
+#form-card {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 1%;
+    margin-top: 2%;
+}
 footer {
     text-align: center;
     position: fixed;
