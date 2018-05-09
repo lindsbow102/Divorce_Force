@@ -16,6 +16,7 @@
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="../js/form-post.js"></script>
 
+    <!--CSS Link-->
     <link rel="stylesheet" type="text/css" href="CSS/form-style.css">
 
 
@@ -29,7 +30,7 @@
             <a href="index.html" class="brand-logo">Divorce Force</a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li>
-                    <a href="form2.html">Set Court Date Form</a>
+                    <a href="form2.html">Set Trial Date Form</a>
                 </li>
                 <li>
                     <a href="https://www.azcourthelp.org/home/az-forms?gclid=EAIaIQobChMIlrig5_bv2gIVkNlkCh3lRgEgEAAYAiAAEgLLmvD_BwE">AZ Legal Forms</a>
@@ -50,8 +51,10 @@
             <div class="card-body">
                 <form action="/api/posts" id="form1" method="POST">
                     <div class="form-group">
+                        <!--Creating the "accordion effect"-->
                         <ul class="collapsible">
                             <li>
+                                <!--"Person Filing" section-->
                                 <div class="collapsible-header">Person Filing</div>
                                 <div class="collapsible-body">
                                     <span>
@@ -90,6 +93,7 @@
                             </li>
 
                             <li>
+                                <!--"Case Information" section-->
                                 <div class="collapsible-header">Case Information</div>
                                 <div class="collapsible-body">
                                     <span>
@@ -152,6 +156,7 @@
                             </li>
 
                             <li>
+                                <!--"Petitioner Information" section-->
                                 <div class="collapsible-header">Petitioner Information</div>
                                 <div class="collapsible-body">
                                     <span>
@@ -191,6 +196,7 @@
                             </li>
 
                             <li>
+                                <!--"Respondent Information" section-->
                                 <div class="collapsible-header">Respondent Information</div>
                                 <div class="collapsible-body">
                                     <span>
@@ -229,6 +235,7 @@
                             </li>
 
                             <li>
+                                <!--"Marriage Information" section-->
                                 <div class="collapsible-header">Marriage Information</div>
                                 <div class="collapsible-body">
                                     <span>
@@ -263,6 +270,7 @@
 
 
                             <li>
+                                <!--"90 Day Requirement" section-->
                                 <div class="collapsible-header">90 Day Requirement</div>
                                 <div class="collapsible-body">
                                     <span>
@@ -290,6 +298,7 @@
                             </li>
                             <!-- ============================================ PAGE 2====================================== -->
                             <li>
+                                <!--"Community Property" section-->
                                 <div class="collapsible-header">Community Property</div>
                                 <div class="collapsible-body">
 
@@ -415,6 +424,8 @@
                                         </div>
 
                                         <br>
+
+                                        <!--Keeping in uncommented section for now if we want to expand on the form's capabilities down the road-->
 
                                         <!-- <label for="furniture_and_appliances">Household Furnishings: Item 2:</label>
                             <input class="form-control" name="form95_2" type="text" tabindex="54" value="" data-objref="392 0 R" title="Household furniture and appliances [3]"
@@ -739,6 +750,7 @@
 
                             <!-- ======================================PAGE 3======================================================= -->
                             <li>
+                                <!--"Separate Property" section-->
                                 <div class="collapsible-header">Separate Property</div>
                                 <div class="collapsible-body">
                                     <span>
@@ -761,6 +773,7 @@
                                 </div>
                             </li>
                             <li>
+                                <!--"Community Debts" section-->
                                 <div class="collapsible-header">Community Debts</div>
                                 <div class="collapsible-body">
                                     <span>
@@ -781,6 +794,7 @@
                                 </div>
                             </li>
                             <li>
+                                <!--"Separate Debts" section-->
                                 <div class="collapsible-header">Separate Debts</div>
                                 <div class="collapsible-body">
                                     <span>
@@ -801,6 +815,7 @@
                                 </div>
                             </li>
                             <li>
+                                <!--"Pregnancy" section-->
                                 <div class="collapsible-header">Pregnancy</div>
                                 <div class="collapsible-body">
                                     <span>
@@ -821,6 +836,7 @@
                                 </div>
                             </li>
                             <li>
+                                <!--"Requests to the Court" section-->
                                 <div class="collapsible-header">Requests to the Court</div>
                                 <div class="collapsible-body">
                                     <span>
@@ -875,10 +891,7 @@
 
                 </form>
 
-
                 </div>
-
-
 
                 <div class="form-check ">
 
@@ -897,6 +910,7 @@
             <div>Copyright &copy; Divorce Force 2018</div>
         </footer>
 
+        <!--Initializing Materialize-->
         <script type="text/javascript"></script>
         <script>
             $(document).ready(function () {
