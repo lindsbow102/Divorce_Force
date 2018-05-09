@@ -1661,6 +1661,50 @@ module.exports = function(sequelize, DataTypes) {
     document_name: {
       type: DataTypes.STRING(128),
       allowNull: true,
+    },
+    S: {
+      type: DataTypes.STRING(128),
+      allowNull: true,
+    },
+    L: {
+      type: DataTypes.STRING(128),
+      allowNull: true,
+    },
+    LP: {
+      type: DataTypes.STRING(128),
+      allowNull: true,
+    },
+    LR: {
+      type: DataTypes.STRING(128),
+      allowNull: true,
+    },
+    judge_name: {
+      type: DataTypes.STRING(128),
+      allowNull: true,
+    },
+    trial_ready_date: {
+      type: DataTypes.STRING(128),
+      allowNull: true,
+    },
+    ST: {
+      type: DataTypes.STRING(128),
+      allowNull: true,
+    },
+    NA: {
+      type: DataTypes.STRING(128),
+      allowNull: true,
+    },
+    CR: {
+      type: DataTypes.STRING(128),
+      allowNull: true,
+    },
+    CM: {
+      type: DataTypes.STRING(128),
+      allowNull: true,
+    },
+    BBR: {
+      type: DataTypes.STRING(128),
+      allowNull: true,
     }
   });
 
