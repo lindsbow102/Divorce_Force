@@ -15,6 +15,14 @@ body {
     animation: AnimationName 59s ease infinite;
         
     }
+
+    #available {
+        background-color: #444;
+    }
+
+    .dropdown-item {
+        color: #444;
+    }
     
     @-webkit-keyframes AnimationName {
         0% {

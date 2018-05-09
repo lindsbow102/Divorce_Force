@@ -56,6 +56,10 @@ nav {
     padding-right: 2%;
 }
 
+label {
+    color: #444;
+}
+
 #form-submit {
     color: white;
     font-weight: bold;
