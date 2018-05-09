@@ -23,4 +23,6 @@ footer {
     color: white;
     padding-top: 5px;
     padding-bottom: 5px;
+    float: left;
+    clear: both;
 }

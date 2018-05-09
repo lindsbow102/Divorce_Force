@@ -9,7 +9,7 @@ body {
 
 .jumbotron {
     color: white;
-    background-color: navy;
+    background-color: #003399;
     text-align: center;
 }
 
@@ -22,7 +22,7 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: navy;
+    background-color:#003399;
     color: white;
     padding-top: 5px;
     padding-bottom: 5px;

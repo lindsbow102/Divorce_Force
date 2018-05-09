@@ -3,7 +3,7 @@
 
 // Require the models
 var db = require("../models")
-, user = require('../routes/user');
+var user = require('../routes/user');
 
 // Routes
 // =============================================================

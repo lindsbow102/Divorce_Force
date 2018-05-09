@@ -15,6 +15,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <script src="https://code.jquery.com/jquery.js"></script>
 
+    <!--CSS Link-->
     <link rel="stylesheet" type="text/css" href="CSS/form-style.css">
 
     <title>Motion to Set Trial Date</title>
@@ -48,8 +49,10 @@
             <div class="card-body">
                 <form>
                     <div class="form-group">
+                        <!--Creating the "accordion effect"-->
                         <ul class="collapsible">
                             <li>
+                                <!--"Person Filing" section-->
                                 <div class="collapsible-header">Person Filing</div>
                                 <div class="collapsible-body">
                                     <span>
@@ -85,6 +88,7 @@
                             </li>
 
                             <li>
+                                <!--"Case Information-Part 1" section-->
                                 <div class="collapsible-header">Case Information--Part 1</div>
                                 <div class="collapsible-body">
                                     <span>
@@ -170,6 +174,7 @@
                             </li>
 
                             <li>
+                                <!--"Lawyer" section-->
                                 <div class="collapsible-header">Lawyer Information</div>
                                 <div class="collapsible-body">
                                     <span>
@@ -210,9 +215,9 @@
                                 </div>
                             </li>
 
-                            <!-- Page 2
-        ======================================================================================================= -->
+                            <!-- Page 2================================================================ -->
                             <li>
+                                <!--"Case Information-Part 2" section-->
                                 <div class="collapsible-header">Case Information--Part 2</div>
                                 <div class="collapsible-body">
                                     <span>
@@ -327,55 +332,28 @@
                 </div>
             </div>
         </div>
-        
-        <!-- Div to hold the rendered pdf -->
-        <div id="result-pdf" style="max-width: 100%; width: 900px; height: 600px; border: 10px solid rgba(0,0,0,.4); margin: auto; padding-bottom: 5%;">
-            PDF VERSION
-            <embed class="pdfobject" src="templates/set-trial-motion.pdf" type="application/pdf" style="overflow: hidden; width: 100%; height: 100%;"
-                internalinstanceid="26">
-        </div>
+    </div>
 
-        <footer>
-                <div>Copyright &copy; Divorce Force 2018</div>
-            </footer>
-    
-            <!-- Modal Trigger -->
-            <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
-    
-            <!-- Modal Structure -->
-            <div id="modal1" class="modal">
-                <div class="modal-content">
-                    <h4>Your legal form has been generated!</h4>
-                    <p>Please click below for access</p>
-                </div>
-                <div class="modal-footer">
-                    <a id="file-name" href="" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
-                </div>
-            </div>
+    <!-- Div to hold the rendered pdf -->
+    <div id="result-pdf" style="max-width: 100%; width: 900px; height: 600px; border: 10px solid rgba(0,0,0,.4); margin: auto; padding-bottom: 5%;">
+        PDF VERSION
+        <embed class="pdfobject" src="templates/set-trial-motion.pdf" type="application/pdf" style="overflow: auto; width: 100%; height: 100%; margin-bottom: -5;"
+            internalinstanceid="26">
+    </div>
 
-        <script type="text/javascript"></script>
-        <script>
-            $(document).ready(function () {
-                Materialize.updateTextFields();
-                $('.collapsible').collapsible();
-                $('.modal').modal();
-            });
+    <footer>
+        <div>Copyright &copy; Divorce Force 2018</div>
+    </footer>
 
-            $('.modal').modal({
-                dismissible: true, // Modal can be dismissed by clicking outside of the modal
-                opacity: .5, // Opacity of modal background
-                inDuration: 300, // Transition in duration
-                outDuration: 200, // Transition out duration
-                startingTop: '4%', // Starting top style attribute
-                endingTop: '10%', // Ending top style attribute
-                ready: function (modal, trigger) { // Callback for Modal open. Modal and trigger parameters available.
-                    alert("Ready");
-                    console.log(modal, trigger);
-                },
-                complete: function () { alert('Closed'); } // Callback for Modal close
-            }
-            );
-        </script>
+    <!--Initialize Materialize-->
+    <script type="text/javascript"></script>
+    <script>
+        $(document).ready(function () {
+            Materialize.updateTextFields();
+            $('.collapsible').collapsible();
+        });
+
+    </script>
 
 </body>
 
