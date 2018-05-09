@@ -2,14 +2,61 @@ html {
     height: 100%;
 }
 body {
-    background-image: url(../images/background.png);
+    /* background-image: url(../images/background.png);
     background-size: cover;
-    height: 100%;
-}
+    height: 100%; */
+    background: linear-gradient(270deg, #000000, #ffffff, #000000, #06002f, #000000);
+    background-size: 1000% 1000%;
+    height: 500px;
+    background: linear-gradient(270deg, #06002f, #06002f, #ffffff, #ffffff, #000000, #000000);
+    background-size: 1200% 1200%;
+    -webkit-animation: AnimationName 59s ease infinite;
+    -moz-animation: AnimationName 59s ease infinite;
+    animation: AnimationName 59s ease infinite;
+        
+    }
+    
+    @-webkit-keyframes AnimationName {
+        0% {
+            background-position: 0% 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0% 50%
+        }
+    }
+    
+    @-moz-keyframes AnimationName {
+        0% {
+            background-position: 0% 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0% 50%
+        }
+    }
+    
+    @keyframes AnimationName {
+        0% {
+            background-position: 0% 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0% 50%
+        }
+    }
+    
+
 
 .jumbotron {
     color: white;
-    background-color: #003399;
+    background-color: rgba(0, 51, 153, 0.6);
     text-align: center;
 }
 
@@ -22,7 +69,7 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color:#003399;
+    background-color: rgba(0, 51, 153, 0.6);
     color: white;
     padding-top: 5px;
     padding-bottom: 5px;
