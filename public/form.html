@@ -1,3 +1,6 @@
+<!-- Divorce-Force Webpage for the Marriage Dissolution Form entries and link generation -->
+<!-- Developed by Lindsey Bowen, Elizabeth Richardson, Steve Smith, Fernando Zacarias -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,428 +10,427 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Link to the jQuery Library -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-
     <!-- Compiled and minified Materialize CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-
     <!-- Compiled and minified Materialize JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="../js/form-post.js"></script>
-
     <!--CSS Link-->
     <link rel="stylesheet" type="text/css" href="CSS/form-style.css">
-
-
     <title>Marriage Dissolution Form</title>
 </head>
 
 <body>
-    <!-- NAVBAR  -->
-    <nav>
-        <div class="nav-wrapper">
-            <a href="index.html" class="brand-logo">Divorce Force</a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li>
-                    <a href="form2.html">Set Trial Date Form</a>
-                </li>
-                <li>
-                    <a href="https://www.azcourthelp.org/home/az-forms?gclid=EAIaIQobChMIlrig5_bv2gIVkNlkCh3lRgEgEAAYAiAAEgLLmvD_BwE">AZ Legal Forms</a>
-                </li>
-                <li>
-                    <a href="http://legalresourceonline.com/">Legal Resources</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <div class="container">
-        <div class="card">
-            <div class="card-header" style="font-size: 24px; font-weight: bold; text-align: center; margin-top: 3%; padding-top: 2%; padding-bottom: 2%;">
-                PETITION FOR DISSOLUTION OF MARRIAGE (DIVORCE) WITHOUT MINOR CHILDREN
+
+    <div id="background-main">
+        <!-- NAVBAR  -->
+        <nav>
+            <div class="nav-wrapper">
+                <a href="index.html" class="brand-logo">Divorce Force</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li>
+                        <a href="form2.html">Set Trial Date Form</a>
+                    </li>
+                    <li>
+                        <a href="https://www.azcourthelp.org/home/az-forms?gclid=EAIaIQobChMIlrig5_bv2gIVkNlkCh3lRgEgEAAYAiAAEgLLmvD_BwE">AZ Legal Forms</a>
+                    </li>
+                    <li>
+                        <a href="http://legalresourceonline.com/">Legal Resources</a>
+                    </li>
+                </ul>
             </div>
+        </nav>
+        <div class="container">
+            <div class="card">
+                <div class="card-header" style="font-size: 24px; font-weight: bold; text-align: center; margin-top: 3%; padding-top: 2%; padding-bottom: 2%;">
+                    PETITION FOR DISSOLUTION OF MARRIAGE (DIVORCE) WITHOUT MINOR CHILDREN
+                </div>
 
-            <br>
-            <div class="card-body">
-                <form action="/api/posts" id="form1" method="POST">
-                    <div class="form-group">
-                        <!--Creating the "accordion effect"-->
-                        <ul class="collapsible">
-                            <li>
-                                <!--"Person Filing" section-->
-                                <div class="collapsible-header">Person Filing</div>
-                                <div class="collapsible-body">
-                                    <span>
+                <br>
+                <div class="card-body">
+                    <form action="/api/posts" id="form1" method="POST">
+                        <div class="form-group">
+                            <!--Creating the "accordion effect"-->
+                            <ul class="collapsible">
+                                <li>
+                                    <!--"Person Filing" section-->
+                                    <div class="collapsible-header">Person Filing</div>
+                                    <div class="collapsible-body">
+                                        <span>
 
-                                        <div class="input-field">
-                                            <label for="person">Person Filing</label>
-                                            <input class="form-control" name="form22_1" type="text" tabindex="1" value="" data-objref="1005 0 R" title="Person Filing"
-                                                data-field-name="person_filing" />
-                                        </div>
+                                            <div class="input-field">
+                                                <label for="person">Person Filing</label>
+                                                <input class="form-control" name="form22_1" type="text" tabindex="1" value="" data-objref="1005 0 R" title="Person Filing"
+                                                    data-field-name="person_filing" />
+                                            </div>
 
-                                        <div class="input-field">
-                                            <label for="address">Address (if not protected)</label>
-                                            <input class="form-control" name="form14_1" type="text" tabindex="2" value="" data-objref="1006 0 R" title="Address (if not protected"
-                                                data-field-name="address_not_protected">
-                                        </div>
+                                            <div class="input-field">
+                                                <label for="address">Address (if not protected)</label>
+                                                <input class="form-control" name="form14_1" type="text" tabindex="2" value="" data-objref="1006 0 R" title="Address (if not protected"
+                                                    data-field-name="address_not_protected">
+                                            </div>
 
-                                        <div class="input-field">
-                                            <label for="city_state_zip">City/State/Zip</label>
-                                            <input class="form-control" name="form20_1" type="text" tabindex="3" value="" data-objref="1007 0 R" title="City, State, Zip Code"
-                                                data-field-name="city_st_zip" />
-                                        </div>
+                                            <div class="input-field">
+                                                <label for="city_state_zip">City/State/Zip</label>
+                                                <input class="form-control" name="form20_1" type="text" tabindex="3" value="" data-objref="1007 0 R" title="City, State, Zip Code"
+                                                    data-field-name="city_st_zip" />
+                                            </div>
 
-                                        <div class="input-field">
-                                            <label for="telephone">Telephone</label>
-                                            <input class="form-control" name="form24_1" type="text" tabindex="4" value="" data-objref="1008 0 R" title="Telephone" data-field-name="telephone"
+                                            <div class="input-field">
+                                                <label for="telephone">Telephone</label>
+                                                <input class="form-control" name="form24_1" type="text" tabindex="4" value="" data-objref="1008 0 R" title="Telephone" data-field-name="telephone"
+                                                />
+                                            </div>
+
+                                            <div class="input-field">
+                                                <label for="email">Email</label>
+                                                <input class="form-control" name="form23_1" type="text" tabindex="5" value="" data-objref="1009 0 R" title="Email Address"
+                                                    data-field-name="email" />
+                                            </div>
+                                        </span>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <!--"Case Information" section-->
+                                    <div class="collapsible-header">Case Information</div>
+                                    <div class="collapsible-body">
+                                        <span>
+
+                                            <div class="input-field">
+                                                <label for="atlas_number">ATLAS Number</label>
+                                                <input class="form-control" name="form21_1" type="text" tabindex="6" value="" data-objref="1010 0 R" title="ATLAS Number"
+                                                    data-field-name="atlas_num" />
+                                            </div>
+
+                                            <div class="input-field">
+                                                <label for="lawyer_bar_num">Lawyer Bar Number</label>
+                                                <input class="form-control" name="form18_1" type="text" tabindex="7" value="" data-objref="1011 0 R" title="Lawyer&#39;s Bar Number"
+                                                    data-field-name="lawyer_bar_num" />
+                                            </div>
+
+                                            <p>Representing: </p>
+
+                                            <input class="form-control" name="form1_1" type="checkbox" tabindex="8" data-objref="1012 0 R" title="Self, without a Lawyer"
+                                                data-field-name="rep_self" imageName="1/form/1012 0 R" images="110100" />
+                                            <label for="form1_1">Self, without a Lawyer</label>
+                                            <br>
+
+                                            <p>OR</p>
+
+                                            <input name="form2_1" type="checkbox" tabindex="9" data-objref="1013 0 R" title="Attorney for" data-field-name="rep_attorney"
+                                                imageName="1/form/1013 0 R" images="110100" />
+                                            <label for="form2_1">Attorney for</label>
+                                            <br>
+
+                                            <input name="form4_1" type="checkbox" tabindex="10" data-objref="1014 0 R" title="Petitioner" data-field-name="attorney_petitioner"
+                                                imageName="1/form/1014 0 R" images="110100" />
+                                            <label for="form4_1">Petitioner</label>
+                                            <br>
+
+                                            <input name="form6_1" type="checkbox" tabindex="11" data-objref="1015 0 R" title="Respondent" data-field-name="attorney_respondent"
+                                                imageName="1/form/1015 0 R" images="110100" />
+                                            <label for="form6_1">Respondent</label>
+
+                                            <div class="input-field">
+                                                <label for="case_number">Case Number</label>
+                                                <input class="form-control" name="form10_1" type="text" tabindex="12" value="" data-objref="1016 0 R" title="Case Number"
+                                                    data-field-name="case_num" />
+                                            </div>
+
+                                            <div class="input-field">
+                                                <label for="petitioner_name">Name of Petitioner</label>
+                                                <input class="form-control" name="form16_1" type="text" tabindex="13" value="" data-objref="1017 0 R" title="Name of Petitioner"
+                                                    data-field-name="petitioner_name" />
+                                            </div>
+
+                                            <div class="input-field">
+                                                <label for="respondent_name">Name of Respondent</label>
+                                                <input class="form-control" name="form15_1" type="text" tabindex="14" value="" data-objref="1018 0 R" title="Name of Respondent"
+                                                    data-field-name="respondent_name" />
+                                            </div>
+
+                                        </span>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <!--"Petitioner Information" section-->
+                                    <div class="collapsible-header">Petitioner Information</div>
+                                    <div class="collapsible-body">
+                                        <span>
+
+                                            <div class="input-field">
+                                                <label for="petitioner_name">Petitioner Name</label>
+                                                <input class="form-control" name="form29_1" type="text" tabindex="15" value="" data-objref="1019 0 R" title="Name of Petitioner"
+                                                    data-field-name="petitioner_name" />
+                                            </div>
+
+                                            <div class="input-field">
+                                                <label for="petitioner_address">Petitioner Address</label>
+                                                <input class="form-control" name="form27_1" type="text" tabindex="16" value="" data-objref="1020 0 R" title="Address" data-field-name="petitioner_address"
+                                                />
+                                            </div>
+
+                                            <div class="input-field">
+                                                <label for="petitioner_dob">Petitioner DOB</label>
+                                                <input class="form-control" name="form13_1" type="text" tabindex="17" value="" data-objref="1021 0 R" title="Date of Birth"
+                                                    data-field-name="petitioner_dob" />
+                                            </div>
+
+                                            <div class="input-field">
+                                                <label for="petitioner_job">Petitioner Job</label>
+                                                <input class="form-control" name="form26_1" type="text" tabindex="18" value="" data-objref="1022 0 R" title="Job Title" data-field-name="petitioner_job"
+                                                />
+                                            </div>
+
+                                            <div class="input-field">
+                                                <label for="petitioner_residency">Petitioner Residency</label>
+                                                <input class="form-control" name="form8_1" type="text" tabindex="19" value="" data-objref="1023 0 R" title="Starting with today, number of months/years in a row you, the Petitioner, have lived in Arizona"
+                                                    data-field-name="petitioner_residency" />
+                                            </div>
+
+                                        </span>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <!--"Respondent Information" section-->
+                                    <div class="collapsible-header">Respondent Information</div>
+                                    <div class="collapsible-body">
+                                        <span>
+
+                                            <div class="input-field">
+                                                <label for="respondent_name">Respondent Name</label>
+                                                <input class="form-control" name="form25_1" type="text" tabindex="20" value="" data-objref="1024 0 R" title="Name of Respondent"
+                                                    data-field-name="respondent_name" />
+                                            </div>
+
+                                            <div class="input-field">
+                                                <label for="respondent_address">Respondent Address</label>
+                                                <input class="form-control" name="form28_1" type="text" tabindex="21" value="" data-objref="1025 0 R" title="Address" data-field-name="respondent_address"
+                                                />
+                                            </div>
+
+                                            <div class="input-field">
+                                                <label for="respondent_dob">Respondent DOB</label>
+                                                <input class="form-control" name="form11_1" type="text" tabindex="22" value="" data-objref="1026 0 R" title="Date of Birth"
+                                                    data-field-name="respondent_dob" />
+                                            </div>
+
+                                            <div class="input-field">
+                                                <label for="respondent_job">Respondent Job</label>
+                                                <input class="form-control" name="form19_1" type="text" tabindex="23" value="" data-objref="1027 0 R" title="Job Title" data-field-name="respondent_job"
+                                                />
+                                            </div>
+
+                                            <div class="input-field">
+                                                <label for="respondent_residency">Respondent Residency</label>
+                                                <input class="form-control" name="form9_1" type="text" tabindex="24" value="" data-objref="1028 0 R" title="Starting with today, number of months/years in a row the Respondent has lived in Arizona"
+                                                    data-field-name="respondent_residency" />
+                                            </div>
+                                        </span>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <!--"Marriage Information" section-->
+                                    <div class="collapsible-header">Marriage Information</div>
+                                    <div class="collapsible-body">
+                                        <span>
+                                            <div class="input-field">
+                                                <label for="marriage_date">Marriage Date</label>
+                                                <input class="form-control" name="form12_1" type="text" tabindex="25" value="" data-objref="1029 0 R" title="Date of Marriage"
+                                                    data-field-name="marriage_date" />
+                                            </div>
+
+                                            <div class="input-field">
+                                                <label for="marriage_city_st">Marriage City/State</label>
+                                                <input class="form-control" name="form17_1" type="text" tabindex="26" value="" data-objref="1030 0 R" title="City and state or country where we were married"
+                                                    data-field-name="marriage_city_st" />
+                                            </div>
+
+                                            <input class="form-control" name="form7_1" type="checkbox" name="marriage-info" tabindex="27" data-objref="1031 0 R" title="We do not have a covenant marriage (If not sure, refer to the INSTRUCTIONS for information"
+                                                data-field-name="convent_marriage" imageName="1/form/1031 0 R" images="110100"
                                             />
-                                        </div>
+                                            <label for="form7_1">Covenant Marriage</label>
 
-                                        <div class="input-field">
-                                            <label for="email">Email</label>
-                                            <input class="form-control" name="form23_1" type="text" tabindex="5" value="" data-objref="1009 0 R" title="Email Address"
-                                                data-field-name="email" />
-                                        </div>
-                                    </span>
-                                </div>
-                            </li>
-
-                            <li>
-                                <!--"Case Information" section-->
-                                <div class="collapsible-header">Case Information</div>
-                                <div class="collapsible-body">
-                                    <span>
-
-                                        <div class="input-field">
-                                            <label for="atlas_number">ATLAS Number</label>
-                                            <input class="form-control" name="form21_1" type="text" tabindex="6" value="" data-objref="1010 0 R" title="ATLAS Number"
-                                                data-field-name="atlas_num" />
-                                        </div>
-
-                                        <div class="input-field">
-                                            <label for="lawyer_bar_num">Lawyer Bar Number</label>
-                                            <input class="form-control" name="form18_1" type="text" tabindex="7" value="" data-objref="1011 0 R" title="Lawyer&#39;s Bar Number"
-                                                data-field-name="lawyer_bar_num" />
-                                        </div>
-
-                                        <p>Representing: </p>
-
-                                        <input class="form-control" name="form1_1" type="checkbox" tabindex="8" data-objref="1012 0 R" title="Self, without a Lawyer"
-                                            data-field-name="rep_self" imageName="1/form/1012 0 R" images="110100" />
-                                        <label for="form1_1">Self, without a Lawyer</label>
-                                        <br>
-
-                                        <p>OR</p>
-
-                                        <input name="form2_1" type="checkbox" tabindex="9" data-objref="1013 0 R" title="Attorney for" data-field-name="rep_attorney"
-                                            imageName="1/form/1013 0 R" images="110100" />
-                                        <label for="form2_1">Attorney for</label>
-                                        <br>
-
-                                        <input name="form4_1" type="checkbox" tabindex="10" data-objref="1014 0 R" title="Petitioner" data-field-name="attorney_petitioner"
-                                            imageName="1/form/1014 0 R" images="110100" />
-                                        <label for="form4_1">Petitioner</label>
-                                        <br>
-
-                                        <input name="form6_1" type="checkbox" tabindex="11" data-objref="1015 0 R" title="Respondent" data-field-name="attorney_respondent"
-                                            imageName="1/form/1015 0 R" images="110100" />
-                                        <label for="form6_1">Respondent</label>
-
-                                        <div class="input-field">
-                                            <label for="case_number">Case Number</label>
-                                            <input class="form-control" name="form10_1" type="text" tabindex="12" value="" data-objref="1016 0 R" title="Case Number"
-                                                data-field-name="case_num" />
-                                        </div>
-
-                                        <div class="input-field">
-                                            <label for="petitioner_name">Name of Petitioner</label>
-                                            <input class="form-control" name="form16_1" type="text" tabindex="13" value="" data-objref="1017 0 R" title="Name of Petitioner"
-                                                data-field-name="petitioner_name" />
-                                        </div>
-
-                                        <div class="input-field">
-                                            <label for="respondent_name">Name of Respondent</label>
-                                            <input class="form-control" name="form15_1" type="text" tabindex="14" value="" data-objref="1018 0 R" title="Name of Respondent"
-                                                data-field-name="respondent_name" />
-                                        </div>
-
-                                    </span>
-                                </div>
-                            </li>
-
-                            <li>
-                                <!--"Petitioner Information" section-->
-                                <div class="collapsible-header">Petitioner Information</div>
-                                <div class="collapsible-body">
-                                    <span>
-
-                                        <div class="input-field">
-                                            <label for="petitioner_name">Petitioner Name</label>
-                                            <input class="form-control" name="form29_1" type="text" tabindex="15" value="" data-objref="1019 0 R" title="Name of Petitioner"
-                                                data-field-name="petitioner_name" />
-                                        </div>
-
-                                        <div class="input-field">
-                                            <label for="petitioner_address">Petitioner Address</label>
-                                            <input class="form-control" name="form27_1" type="text" tabindex="16" value="" data-objref="1020 0 R" title="Address" data-field-name="petitioner_address"
+                                            <input class="form-control" name="form3_1" type="checkbox" name="marriage-info" tabindex="28" data-objref="1032 0 R" title="Our marriage is broken beyond repair (“irretrievably broken”) and there is no hope of reconciliation"
+                                                data-field-name="broken_marriage" imageName="1/form/1032 0 R" images="110100"
                                             />
-                                        </div>
+                                            <label for="form3_1">Broken Marriage</label>
 
-                                        <div class="input-field">
-                                            <label for="petitioner_dob">Petitioner DOB</label>
-                                            <input class="form-control" name="form13_1" type="text" tabindex="17" value="" data-objref="1021 0 R" title="Date of Birth"
-                                                data-field-name="petitioner_dob" />
-                                        </div>
 
-                                        <div class="input-field">
-                                            <label for="petitioner_job">Petitioner Job</label>
-                                            <input class="form-control" name="form26_1" type="text" tabindex="18" value="" data-objref="1022 0 R" title="Job Title" data-field-name="petitioner_job"
+                                            <input class="form-control" name="form5_1" type="checkbox" name="marriage-info" tabindex="29" data-objref="1033 0 R" title="We have tried to resolve our problems through Conciliation Services or going to Conciliation"
+                                                data-field-name="conciliation_attempted" imageName="1/form/1033 0 R" images="110100"
                                             />
-                                        </div>
-
-                                        <div class="input-field">
-                                            <label for="petitioner_residency">Petitioner Residency</label>
-                                            <input class="form-control" name="form8_1" type="text" tabindex="19" value="" data-objref="1023 0 R" title="Starting with today, number of months/years in a row you, the Petitioner, have lived in Arizona"
-                                                data-field-name="petitioner_residency" />
-                                        </div>
-
-                                    </span>
-                                </div>
-                            </li>
-
-                            <li>
-                                <!--"Respondent Information" section-->
-                                <div class="collapsible-header">Respondent Information</div>
-                                <div class="collapsible-body">
-                                    <span>
-
-                                        <div class="input-field">
-                                            <label for="respondent_name">Respondent Name</label>
-                                            <input class="form-control" name="form25_1" type="text" tabindex="20" value="" data-objref="1024 0 R" title="Name of Respondent"
-                                                data-field-name="respondent_name" />
-                                        </div>
-
-                                        <div class="input-field">
-                                            <label for="respondent_address">Respondent Address</label>
-                                            <input class="form-control" name="form28_1" type="text" tabindex="21" value="" data-objref="1025 0 R" title="Address" data-field-name="respondent_address"
-                                            />
-                                        </div>
-
-                                        <div class="input-field">
-                                            <label for="respondent_dob">Respondent DOB</label>
-                                            <input class="form-control" name="form11_1" type="text" tabindex="22" value="" data-objref="1026 0 R" title="Date of Birth"
-                                                data-field-name="respondent_dob" />
-                                        </div>
-
-                                        <div class="input-field">
-                                            <label for="respondent_job">Respondent Job</label>
-                                            <input class="form-control" name="form19_1" type="text" tabindex="23" value="" data-objref="1027 0 R" title="Job Title" data-field-name="respondent_job"
-                                            />
-                                        </div>
-
-                                        <div class="input-field">
-                                            <label for="respondent_residency">Respondent Residency</label>
-                                            <input class="form-control" name="form9_1" type="text" tabindex="24" value="" data-objref="1028 0 R" title="Starting with today, number of months/years in a row the Respondent has lived in Arizona"
-                                                data-field-name="respondent_residency" />
-                                        </div>
-                                    </span>
-                                </div>
-                            </li>
-
-                            <li>
-                                <!--"Marriage Information" section-->
-                                <div class="collapsible-header">Marriage Information</div>
-                                <div class="collapsible-body">
-                                    <span>
-                                        <div class="input-field">
-                                            <label for="marriage_date">Marriage Date</label>
-                                            <input class="form-control" name="form12_1" type="text" tabindex="25" value="" data-objref="1029 0 R" title="Date of Marriage"
-                                                data-field-name="marriage_date" />
-                                        </div>
-
-                                        <div class="input-field">
-                                            <label for="marriage_city_st">Marriage City/State</label>
-                                            <input class="form-control" name="form17_1" type="text" tabindex="26" value="" data-objref="1030 0 R" title="City and state or country where we were married"
-                                                data-field-name="marriage_city_st" />
-                                        </div>
-
-                                        <input class="form-control" name="form7_1" type="checkbox" name="marriage-info" tabindex="27" data-objref="1031 0 R" title="We do not have a covenant marriage (If not sure, refer to the INSTRUCTIONS for information"
-                                            data-field-name="convent_marriage" imageName="1/form/1031 0 R" images="110100" />
-                                        <label for="form7_1">Covenant Marriage</label>
-
-                                        <input class="form-control" name="form3_1" type="checkbox" name="marriage-info" tabindex="28" data-objref="1032 0 R" title="Our marriage is broken beyond repair (“irretrievably broken”) and there is no hope of reconciliation"
-                                            data-field-name="broken_marriage" imageName="1/form/1032 0 R" images="110100" />
-                                        <label for="form3_1">Broken Marriage</label>
+                                            <label for="form5_1">Conciliation Attempted</label>
+                                        </span>
+                                    </div>
+                                </li>
 
 
-                                        <input class="form-control" name="form5_1" type="checkbox" name="marriage-info" tabindex="29" data-objref="1033 0 R" title="We have tried to resolve our problems through Conciliation Services or going to Conciliation"
-                                            data-field-name="conciliation_attempted" imageName="1/form/1033 0 R" images="110100"
-                                        />
-                                        <label for="form5_1">Conciliation Attempted</label>
-                                    </span>
-                                </div>
-                            </li>
+                                <li>
+                                    <!--"90 Day Requirement" section-->
+                                    <div class="collapsible-header">90 Day Requirement</div>
+                                    <div class="collapsible-body">
+                                        <span>
+                                            <div class="input-field">
+                                                <label for="case_num">Case Number</label>
+                                                <input class="form-control" name="form79_2" type="text" tabindex="30" value="" data-objref="373 0 R" title="Case Number"
+                                                    data-field-name="case_num" />
+                                            </div>
+
+                                            <input name="form15_2" type="checkbox" name="90-day-req" tabindex="31" data-objref="369 0 R" title="Arizona for at least 90 days before I filed this action. (WARNING: If this statement is not true, you cannot"
+                                                data-field-name="90day_yes" imageName="2/form/369 0 R" images="110100" />
+                                            <label for="form15_2">I</label>
+
+                                            <p>OR</p>
+
+                                            <input name="form6_2" type="checkbox" name="90-day-req" tabindex="32" data-objref="375 0 R" title="my spouse" data-field-name="90day_no"
+                                                imageName="2/form/375 0 R" images="110100" />
+                                            <label for="form6_2">my spouse</label>
+
+                                            <p>have lived, or have been stationed while a member of the Armed Forces, in Arizona
+                                                for at least 90 days before I have filed this action. (WARNING: If this statement
+                                                is not true, you cannot file for divorce until this becomes true.)</p>
+                                        </span>
+                                    </div>
+                                </li>
+                                <!-- ============================================ PAGE 2====================================== -->
+                                <li>
+                                    <!--"Community Property" section-->
+                                    <div class="collapsible-header">Community Property</div>
+                                    <div class="collapsible-body">
+
+                                        <span>
+
+                                            <input name="form49_2" type="checkbox" name="community-property" tabindex="33" data-objref="371 0 R" data-field-name="community_prop_no"
+                                                imageName="2/form/371 0 R" images="110100" />
+                                            <label for="form49_2">My spouse and I
+                                                <strong>did not</strong> acquire any community property during the marriage, OR
+                                            </label>
+
+                                            <input name="form53_2" type="checkbox" name="community-property" tabindex="34" data-objref="374 0 R" data-field-name="community_prop_yes"
+                                                imageName="2/form/374 0 R" images="110100" />
+                                            <label for="form53_2">My spouse and I
+                                                <strong>did</strong> acquire property during our marriage and we should divide it
+                                                as follows:
+                                            </label>
+
+                                            <br>
+
+                                            <input name="form46_2" type="checkbox" tabindex="35" data-objref="370 0 R" data-field-name="real_estate1_yes" imageName="2/form/370 0 R"
+                                                images="110100" />
+                                            <label for="form46_2">Real Estate #1</label>
+
+                                            <br>
+
+                                            <div class="input-field">
+                                                <label for="real_estate1_location">Real estate #1 located at: </label>
+                                                <input name="form104_2" type="text" tabindex="36" value="" data-objref="376 0 R" title="Real estate located at" data-field-name="real_estate1_location"
+                                                />
+                                            </div>
+
+                                            <input name="form33_2" type="checkbox" name="rel-estate-type" tabindex="37" data-objref="368 0 R" data-field-name="real_estate1_pet"
+                                                imageName="2/form/368 0 R" images="110100" />
+                                            <label for="form33_2">Petitioner</label>
 
 
-                            <li>
-                                <!--"90 Day Requirement" section-->
-                                <div class="collapsible-header">90 Day Requirement</div>
-                                <div class="collapsible-body">
-                                    <span>
-                                        <div class="input-field">
-                                            <label for="case_num">Case Number</label>
-                                            <input class="form-control" name="form79_2" type="text" tabindex="30" value="" data-objref="373 0 R" title="Case Number"
-                                                data-field-name="case_num" />
-                                        </div>
+                                            <input name="form40_2" type="checkbox" name="rel-estate-type" tabindex="38" data-objref="383 0 R" data-field-name="real_estate1_res"
+                                                imageName="2/form/383 0 R" images="110100" />
+                                            <label for="form40_2">Respondent</label>
 
-                                        <input name="form15_2" type="checkbox" name="90-day-req" tabindex="31" data-objref="369 0 R" title="Arizona for at least 90 days before I filed this action. (WARNING: If this statement is not true, you cannot"
-                                            data-field-name="90day_yes" imageName="2/form/369 0 R" images="110100" />
-                                        <label for="form15_2">I</label>
+                                            <br>
 
-                                        <p>OR</p>
+                                            <div class="input-field">
+                                                <label for="form66_2">Value $</label>
+                                                <input class="form-id" name="form66_2" type="text" tabindex="39" value="" data-objref="389 0 R" title="undefined" data-field-name="real_estate1_value"
+                                                />
+                                            </div>
 
-                                        <input name="form6_2" type="checkbox" name="90-day-req" tabindex="32" data-objref="375 0 R" title="my spouse" data-field-name="90day_no"
-                                            imageName="2/form/375 0 R" images="110100" />
-                                        <label for="form6_2">my spouse</label>
+                                            <div class="input-field">
+                                                <label for="form106_2">Legal description: </label>
+                                                <input class="form-id" name="form106_2" type="text" tabindex="40" value="" data-objref="379 0 R" title="Legal Description [1]"
+                                                    data-field-name="real_estate1_desc" />
+                                            </div>
 
-                                        <p>have lived, or have been stationed while a member of the Armed Forces, in Arizona
-                                            for at least 90 days before I have filed this action. (WARNING: If this statement
-                                            is not true, you cannot file for divorce until this becomes true.)</p>
-                                    </span>
-                                </div>
-                            </li>
-                            <!-- ============================================ PAGE 2====================================== -->
-                            <li>
-                                <!--"Community Property" section-->
-                                <div class="collapsible-header">Community Property</div>
-                                <div class="collapsible-body">
+                                            <input class="form-id" name="form35_2" type="checkbox" tabindex="42" data-objref="378 0 R" data-field-name="real_estate2_yes"
+                                                imageName="2/form/378 0 R" images="110100" />
+                                            <label for="form35_2">Real Estate #2</label>
+                                            <br>
 
-                                    <span>
+                                            <div class="input-field">
+                                                <label for="real_estate2_location">Real Estate #2 Located at:</label>
+                                                <input class="form-id" name="form103_2" type="text" tabindex="41" value="" data-objref="386 0 R" title="Real estate located at"
+                                                    data-field-name="real_estate2_location" />
+                                            </div>
 
-                                        <input name="form49_2" type="checkbox" name="community-property" tabindex="33" data-objref="371 0 R" data-field-name="community_prop_no"
-                                            imageName="2/form/371 0 R" images="110100" />
-                                        <label for="form49_2">My spouse and I
-                                            <strong>did not</strong> acquire any community property during the marriage, OR
-                                        </label>
-
-                                        <input name="form53_2" type="checkbox" name="community-property" tabindex="34" data-objref="374 0 R" data-field-name="community_prop_yes"
-                                            imageName="2/form/374 0 R" images="110100" />
-                                        <label for="form53_2">My spouse and I
-                                            <strong>did</strong> acquire property during our marriage and we should divide it as
-                                            follows:
-                                        </label>
-
-                                        <br>
-
-                                        <input name="form46_2" type="checkbox" tabindex="35" data-objref="370 0 R" data-field-name="real_estate1_yes" imageName="2/form/370 0 R"
-                                            images="110100" />
-                                        <label for="form46_2">Real Estate #1</label>
-
-                                        <br>
-
-                                        <div class="input-field">
-                                            <label for="real_estate1_location">Real estate #1 located at: </label>
-                                            <input name="form104_2" type="text" tabindex="36" value="" data-objref="376 0 R" title="Real estate located at" data-field-name="real_estate1_location"
-                                            />
-                                        </div>
-
-                                        <input name="form33_2" type="checkbox" name="rel-estate-type" tabindex="37" data-objref="368 0 R" data-field-name="real_estate1_pet"
-                                            imageName="2/form/368 0 R" images="110100" />
-                                        <label for="form33_2">Petitioner</label>
+                                            <input name="form28_2" type="checkbox" tabindex="43" data-objref="377 0 R" data-field-name="real_estate2_pet" imageName="2/form/377 0 R"
+                                                images="110100" />
+                                            <label for="form28_2">Petitioner</label>
 
 
-                                        <input name="form40_2" type="checkbox" name="rel-estate-type" tabindex="38" data-objref="383 0 R" data-field-name="real_estate1_res"
-                                            imageName="2/form/383 0 R" images="110100" />
-                                        <label for="form40_2">Respondent</label>
+                                            <input name="form55_2" type="checkbox" tabindex="44" data-objref="382 0 R" data-field-name="real_estate2_res" imageName="2/form/382 0 R"
+                                                images="110100" />
+                                            <label for="form55_2">Respondent</label>
 
-                                        <br>
+                                            <br>
 
-                                        <div class="input-field">
-                                            <label for="form66_2">Value $</label>
-                                            <input class="form-id" name="form66_2" type="text" tabindex="39" value="" data-objref="389 0 R" title="undefined" data-field-name="real_estate1_value"
-                                            />
-                                        </div>
+                                            <div class="input-field">
+                                                <label for="form78_2">Value $</label>
+                                                <input class="form-id" name="form78_2" type="text" tabindex="45" value="" data-objref="380 0 R" title="undefined" data-field-name="real_estate2"
+                                                />
+                                            </div>
 
-                                        <div class="input-field">
-                                            <label for="form106_2">Legal description: </label>
-                                            <input class="form-id" name="form106_2" type="text" tabindex="40" value="" data-objref="379 0 R" title="Legal Description [1]"
-                                                data-field-name="real_estate1_desc" />
-                                        </div>
-
-                                        <input class="form-id" name="form35_2" type="checkbox" tabindex="42" data-objref="378 0 R" data-field-name="real_estate2_yes"
-                                            imageName="2/form/378 0 R" images="110100" />
-                                        <label for="form35_2">Real Estate #2</label>
-                                        <br>
-
-                                        <div class="input-field">
-                                            <label for="real_estate2_location">Real Estate #2 Located at:</label>
-                                            <input class="form-id" name="form103_2" type="text" tabindex="41" value="" data-objref="386 0 R" title="Real estate located at"
-                                                data-field-name="real_estate2_location" />
-                                        </div>
-
-                                        <input name="form28_2" type="checkbox" tabindex="43" data-objref="377 0 R" data-field-name="real_estate2_pet" imageName="2/form/377 0 R"
-                                            images="110100" />
-                                        <label for="form28_2">Petitioner</label>
-
-
-                                        <input name="form55_2" type="checkbox" tabindex="44" data-objref="382 0 R" data-field-name="real_estate2_res" imageName="2/form/382 0 R"
-                                            images="110100" />
-                                        <label for="form55_2">Respondent</label>
-
-                                        <br>
-
-                                        <div class="input-field">
-                                            <label for="form78_2">Value $</label>
-                                            <input class="form-id" name="form78_2" type="text" tabindex="45" value="" data-objref="380 0 R" title="undefined" data-field-name="real_estate2"
-                                            />
-                                        </div>
-
-                                        <div class="input-field">
-                                            <label for="real_estate2_desc">Legal Description</label>
-                                            <input class="form-control" name="form105_2" type="text" tabindex="46" data-objref="381 0 R" title="Legal Description [2]"
-                                                data-field-name="real_estate2_desc" />
-                                        </div>
+                                            <div class="input-field">
+                                                <label for="real_estate2_desc">Legal Description</label>
+                                                <input class="form-control" name="form105_2" type="text" tabindex="46" data-objref="381 0 R" title="Legal Description [2]"
+                                                    data-field-name="real_estate2_desc" />
+                                            </div>
 
 
 
-                                        <!-- HOUSEHOLD FURNITURE -->
+                                            <!-- HOUSEHOLD FURNITURE -->
 
 
-                                        <input class="form-control" name="form8_2" type="checkbox" tabindex="47" data-objref="384 0 R" data-field-name="household_furn_yes"
-                                            imageName="2/form/384 0 R" images="110100" />
-                                        <label for="form8_2">Household furniture and appliances: </label>
+                                            <input class="form-control" name="form8_2" type="checkbox" tabindex="47" data-objref="384 0 R" data-field-name="household_furn_yes"
+                                                imageName="2/form/384 0 R" images="110100" />
+                                            <label for="form8_2">Household furniture and appliances: </label>
 
-                                        <br>
+                                            <br>
 
-                                        <div class="input-field">
-                                            <label for="furniture_and_appliances">Household Furniture and Appliances</label>
-                                            <input class="form-control" name="form89_2" type="text" tabindex="52" value="" data-objref="394 0 R" title="Household furniture and appliances [2]"
-                                                data-field-name="Household furniture and appliances 2 DRDA10f" />
-                                        </div>
-
-
-                                        <input name="form2_2" type="checkbox" tabindex="53" data-objref="391 0 R" data-field-name="Check_Box23_DRDA10f" imageName="2/form/391 0 R"
-                                            images="110100" />
-                                        <label for="form2_2">Petitioner</label>
+                                            <div class="input-field">
+                                                <label for="furniture_and_appliances">Household Furniture and Appliances</label>
+                                                <input class="form-control" name="form89_2" type="text" tabindex="52" value="" data-objref="394 0 R" title="Household furniture and appliances [2]"
+                                                    data-field-name="Household furniture and appliances 2 DRDA10f" />
+                                            </div>
 
 
-                                        <input name="formR1-2" type="checkbox" tabindex="x" data-objref="391 0 R" data-field-name="R1-2" imageName="2/form/391 0 R"
-                                            images="110100" />
-                                        <label for="formR1-2">Respondent</label>
+                                            <input name="form2_2" type="checkbox" tabindex="53" data-objref="391 0 R" data-field-name="Check_Box23_DRDA10f" imageName="2/form/391 0 R"
+                                                images="110100" />
+                                            <label for="form2_2">Petitioner</label>
 
-                                        <br>
 
-                                        <div class="input-field">
-                                            <label for="formV1-2">Value ($): </label>
-                                            <input class="form-id" name="formV1-2" type="text" tabindex="x" data-objref="391 0 R" data-field-name="Check_Box23_DRDA10f"
-                                                imageName="2/form/391 0 R" images="110100" />
-                                        </div>
-                                        
+                                            <input name="formR1-2" type="checkbox" tabindex="x" data-objref="391 0 R" data-field-name="R1-2" imageName="2/form/391 0 R"
+                                                images="110100" />
+                                            <label for="formR1-2">Respondent</label>
 
-                                        <br>
+                                            <br>
 
-                                        <!--Keeping in uncommented section for now if we want to expand on the form's capabilities down the road-->
+                                            <div class="input-field">
+                                                <label for="formV1-2">Value ($): </label>
+                                                <input class="form-id" name="formV1-2" type="text" tabindex="x" data-objref="391 0 R" data-field-name="Check_Box23_DRDA10f"
+                                                    imageName="2/form/391 0 R" images="110100" />
+                                            </div>
 
-                                        <!-- <label for="furniture_and_appliances">Household Furnishings: Item 2:</label>
+
+                                            <br>
+
+                                            <!--Keeping in uncommented section for now if we want to expand on the form's capabilities down the road-->
+
+                                            <!-- <label for="furniture_and_appliances">Household Furnishings: Item 2:</label>
                             <input class="form-control" name="form95_2" type="text" tabindex="54" value="" data-objref="392 0 R" title="Household furniture and appliances [3]"
                                 data-field-name="Household furniture and appliances 3 DRDA10f" />
 
@@ -467,7 +469,7 @@
                         </div> -->
 
 
-                                        <!-- <input name="form52_2" type="checkbox" tabindex="61" data-objref="410 0 R" data-field-name="Check Box28 DRDA10f" imageName="2/form/410 0 R"
+                                            <!-- <input name="form52_2" type="checkbox" tabindex="61" data-objref="410 0 R" data-field-name="Check Box28 DRDA10f" imageName="2/form/410 0 R"
                             images="110100" />
                         <input name="form18_2" type="checkbox" tabindex="62" data-objref="407 0 R" data-field-name="Check Box29 DRDA10f" imageName="2/form/407 0 R"
                             images="110100" />=
@@ -482,40 +484,40 @@
 
 
 
-                                        <!-- HOUSEHOLD FURNISHINGS -->
+                                            <!-- HOUSEHOLD FURNISHINGS -->
 
 
 
-                                        <input class="form-control" name="form92_2" type="checkbox" tabindex="67" data-objref="404 0 R" data-field-name="Household furnishings 1 DRDA10f"
-                                            imageName="2/form/384 0 R" images="110100" />
-                                        <label for="form92_2">Household furnishings: </label>
-                                        <br>
+                                            <input class="form-control" name="form92_2" type="checkbox" tabindex="67" data-objref="404 0 R" data-field-name="Household furnishings 1 DRDA10f"
+                                                imageName="2/form/384 0 R" images="110100" />
+                                            <label for="form92_2">Household furnishings: </label>
+                                            <br>
 
-                                        <div class="input-field">
-                                            <label for="Household furnishings 1 DRDA10f">Household furnishings</label>
-                                            <input class="form-control" name="form92_1" type="text" tabindex="67" value="" data-objref="404 0 R" title="Household furnishings [1]"
-                                                data-field-name="Household furnishings 1 DRDA10f" />
-                                        </div>
+                                            <div class="input-field">
+                                                <label for="Household furnishings 1 DRDA10f">Household furnishings</label>
+                                                <input class="form-control" name="form92_1" type="text" tabindex="67" value="" data-objref="404 0 R" title="Household furnishings [1]"
+                                                    data-field-name="Household furnishings 1 DRDA10f" />
+                                            </div>
 
-                                        <input class="form-control" name="form54_2" type="checkbox" tabindex="68" data-objref="405 0 R" data-field-name="Check Box32 DRDA10f"
-                                            imageName="2/form/405 0 R" images="110100" />
-                                        <label for="form54_2">Petitioner</label>
-
-
-                                        <input class="form-control" name="form10_2" type="checkbox" tabindex="69" data-objref="406 0 R" data-field-name="Check Box33 DRDA10f"
-                                            imageName="2/form/406 0 R" images="110100" />
-                                        <label for="form10_2">Respondent</label>
-
-                                        <div class="input-field">
-                                            <label for="V2-1">Value ($): </label>
-                                            <input class="form-id" name="formV2-1" type="text" tabindex="69" data-objref="406 0 R" data-field-name="V2-1" imageName="2/form/406 0 R"
-                                                images="110100" />
-                                        </div>
-
-                                        <br>
+                                            <input class="form-control" name="form54_2" type="checkbox" tabindex="68" data-objref="405 0 R" data-field-name="Check Box32 DRDA10f"
+                                                imageName="2/form/405 0 R" images="110100" />
+                                            <label for="form54_2">Petitioner</label>
 
 
-                                        <!-- <input name="form100_2" type="text" tabindex="70" value="" data-objref="417 0 R" title="Household furnishings [2]" data-field-name="Household furnishings 2 DRDA10f"
+                                            <input class="form-control" name="form10_2" type="checkbox" tabindex="69" data-objref="406 0 R" data-field-name="Check Box33 DRDA10f"
+                                                imageName="2/form/406 0 R" images="110100" />
+                                            <label for="form10_2">Respondent</label>
+
+                                            <div class="input-field">
+                                                <label for="V2-1">Value ($): </label>
+                                                <input class="form-id" name="formV2-1" type="text" tabindex="69" data-objref="406 0 R" data-field-name="V2-1" imageName="2/form/406 0 R"
+                                                    images="110100" />
+                                            </div>
+
+                                            <br>
+
+
+                                            <!-- <input name="form100_2" type="text" tabindex="70" value="" data-objref="417 0 R" title="Household furnishings [2]" data-field-name="Household furnishings 2 DRDA10f"
                         />
                         <input name="form41_2" type="checkbox" tabindex="71" data-objref="415 0 R" data-field-name="Check Box34 DRDA10f" imageName="2/form/415 0 R"
                             images="110100" />
@@ -531,37 +533,37 @@
                         /> -->
 
 
-                                        <!-- OTHER ITEMS -->
-                                        <input class="form-control" name="formOI2_1" type="checkbox" data-field-name="OI2_1" imageName="2/form/384 0 R" images="110100"
-                                        />
-                                        <label for="formOI2_1">Other items: </label>
-                                        <br>
+                                            <!-- OTHER ITEMS -->
+                                            <input class="form-control" name="formOI2_1" type="checkbox" data-field-name="OI2_1" imageName="2/form/384 0 R" images="110100"
+                                            />
+                                            <label for="formOI2_1">Other items: </label>
+                                            <br>
 
-                                        <div class="input-field">
-                                            <label for="OI1">Other items:</label>
-                                            <input class="form-control" name="formOI1-1" type="text" value="" title="Other items 1" data-field-name="OI1" />
-                                        </div>
-
-
-                                        <input class="form-control" name="formOI1-2" type="checkbox" title="PCheckbox" data-field-name="OT2" />
-                                        <label for="formOI1-2">Petitioner</label>
+                                            <div class="input-field">
+                                                <label for="OI1">Other items:</label>
+                                                <input class="form-control" name="formOI1-1" type="text" value="" title="Other items 1" data-field-name="OI1" />
+                                            </div>
 
 
-                                        <input class="form-control" name="formOI1-3" type="checkbox" title="RCheckbox" data-field-name="OI3" />
-                                        <label for="formOI1-3">Respondent</label>
-
-                                        <br>
-
-                                        <div class="input-field">
-                                            <label for="OI4">Value ($): </label>
-                                            <input class="form-id" name="formOI1-4" type="text" data-field-name="OI4" imageName="2/form/406 0 R" images="110100" />
-                                        </div>
-
-                                        <br>
+                                            <input class="form-control" name="formOI1-2" type="checkbox" title="PCheckbox" data-field-name="OT2" />
+                                            <label for="formOI1-2">Petitioner</label>
 
 
+                                            <input class="form-control" name="formOI1-3" type="checkbox" title="RCheckbox" data-field-name="OI3" />
+                                            <label for="formOI1-3">Respondent</label>
 
-                                        <!-- <input name="form87_2" type="text" tabindex="77" value="" data-objref="420 0 R" title="Other items [1]" data-field-name="Other items 1 DRDA10f"
+                                            <br>
+
+                                            <div class="input-field">
+                                                <label for="OI4">Value ($): </label>
+                                                <input class="form-id" name="formOI1-4" type="text" data-field-name="OI4" imageName="2/form/406 0 R" images="110100" />
+                                            </div>
+
+                                            <br>
+
+
+
+                                            <!-- <input name="form87_2" type="text" tabindex="77" value="" data-objref="420 0 R" title="Other items [1]" data-field-name="Other items 1 DRDA10f"
                         />
                         <input name="form86_2" type="text" tabindex="78"  data-objref="425 0 R" title="Other items [2]" data-field-name="Other items 2 DRDA10f"
                         />
@@ -637,40 +639,40 @@
                             images="110100" /> -->
 
 
-                                        <!-- PENSION RETIREMENT FUND -->
-                                        <input class="form-control" name="formPRF1_1" type="checkbox" data-field-name="formPRF1_1" imageName="2/form/384 0 R" images="110100"
-                                        />
-                                        <label for="formPRF1_1">Pension/Retirement fund/profit sharing/stock plan/401k: </label>
-
-                                        <div class="input-field">
-                                            <label for="PensionRetirement fundprofit sharingstock plan401K 1 DRDA10f">Pension/Retirement fund/profit sharing/stock plan/401k: </label>
-                                            <input class="form-control" name="form99_2" type="text" tabindex="115" value="" data-objref="464 0 R" title="Pension/Retirement fund/profit sharing/stock plan/401K [1]"
-                                                data-field-name="PensionRetirement fundprofit sharingstock plan401K 1 DRDA10f"
+                                            <!-- PENSION RETIREMENT FUND -->
+                                            <input class="form-control" name="formPRF1_1" type="checkbox" data-field-name="formPRF1_1" imageName="2/form/384 0 R" images="110100"
                                             />
-                                        </div>
+                                            <label for="formPRF1_1">Pension/Retirement fund/profit sharing/stock plan/401k: </label>
+
+                                            <div class="input-field">
+                                                <label for="PensionRetirement fundprofit sharingstock plan401K 1 DRDA10f">Pension/Retirement fund/profit sharing/stock plan/401k: </label>
+                                                <input class="form-control" name="form99_2" type="text" tabindex="115" value="" data-objref="464 0 R" title="Pension/Retirement fund/profit sharing/stock plan/401K [1]"
+                                                    data-field-name="PensionRetirement fundprofit sharingstock plan401K 1 DRDA10f"
+                                                />
+                                            </div>
 
 
-                                        <input class="form-control" name="form42_2" type="checkbox" tabindex="116" data-objref="456 0 R" data-field-name="Check Box52 DRDA10f"
-                                            imageName="2/form/456 0 R" images="110100" />
-                                        <label for="form42_2">Petitioner</label>
+                                            <input class="form-control" name="form42_2" type="checkbox" tabindex="116" data-objref="456 0 R" data-field-name="Check Box52 DRDA10f"
+                                                imageName="2/form/456 0 R" images="110100" />
+                                            <label for="form42_2">Petitioner</label>
 
 
-                                        <input class="form-control" name="form11_2" type="checkbox" tabindex="117" data-objref="457 0 R" data-field-name="Check Box53 DRDA10f"
-                                            imageName="2/form/457 0 R" images="110100" />
-                                        <label for="form11_2">Respondent</label>
+                                            <input class="form-control" name="form11_2" type="checkbox" tabindex="117" data-objref="457 0 R" data-field-name="Check Box53 DRDA10f"
+                                                imageName="2/form/457 0 R" images="110100" />
+                                            <label for="form11_2">Respondent</label>
 
-                                        <br>
+                                            <br>
 
-                                        <div class="input-field">
-                                            <label for="PensionRetirement Value">Value ($):</label>
-                                            <input class="form-id" name="form90_2" type="text" tabindex="118" value="" data-objref="454 0 R" title="Pension/Retirement fund/profit sharing/stock plan/401K [2]"
-                                                data-field-name="PensionRetirement Value" />
-                                        </div>
+                                            <div class="input-field">
+                                                <label for="PensionRetirement Value">Value ($):</label>
+                                                <input class="form-id" name="form90_2" type="text" tabindex="118" value="" data-objref="454 0 R" title="Pension/Retirement fund/profit sharing/stock plan/401K [2]"
+                                                    data-field-name="PensionRetirement Value" />
+                                            </div>
 
-                                        <br>
+                                            <br>
 
 
-                                        <!-- <input name="form44_2" type="checkbox" tabindex="119" data-objref="460 0 R" data-field-name="Check Box54 DRDA10f" imageName="2/form/460 0 R"
+                                            <!-- <input name="form44_2" type="checkbox" tabindex="119" data-objref="460 0 R" data-field-name="Check Box54 DRDA10f" imageName="2/form/460 0 R"
                             images="110100" />
                         <input name="form14_2" type="checkbox" tabindex="120" data-objref="455 0 R" data-field-name="Check Box55 DRDA10f" imageName="2/form/455 0 R"
                             images="110100" />
@@ -688,297 +690,297 @@
                         /> -->
 
 
-                                        <!-- MOTOR VEHICLES -->
+                                            <!-- MOTOR VEHICLES -->
 
-                                        <input class="form-control" name="form36_2" type="checkbox" tabindex="127" data-objref="475 0 R" data-field-name="Check Box15 DRDA10f"
-                                            imageName="2/form/475 0 R" images="110100" />
-                                        <label for="form36_2">Motor Vehicles</label>
+                                            <input class="form-control" name="form36_2" type="checkbox" tabindex="127" data-objref="475 0 R" data-field-name="Check Box15 DRDA10f"
+                                                imageName="2/form/475 0 R" images="110100" />
+                                            <label for="form36_2">Motor Vehicles</label>
 
-                                        <br>
+                                            <br>
 
-                                        <div class="input-field">
-                                            <label for="Make DRDA10f">Make: </label>
-                                            <input class="form-control" name="form80_2" type="text" tabindex="128" value="" data-objref="479 0 R" title="Make" data-field-name="Make DRDA10f"
-                                            />
-                                        </div>
+                                            <div class="input-field">
+                                                <label for="Make DRDA10f">Make: </label>
+                                                <input class="form-control" name="form80_2" type="text" tabindex="128" value="" data-objref="479 0 R" title="Make" data-field-name="Make DRDA10f"
+                                                />
+                                            </div>
 
-                                        <div class="input-field">
-                                            <label for="Year DRDA10f">Year: </label>
-                                            <input class="form-control" name="form56_2" type="text" tabindex="129" value="" data-objref="472 0 R" title="Year" data-field-name="Year DRDA10f"
-                                            />
-                                        </div>
-
-
-                                        <input class="form-control" name="form34_2" type="checkbox" tabindex="130" data-objref="474 0 R" data-field-name="Check Box58 DRDA10f"
-                                            imageName="2/form/474 0 R" images="110100" />
-                                        <label for="form34_2">Petitioner</label>
+                                            <div class="input-field">
+                                                <label for="Year DRDA10f">Year: </label>
+                                                <input class="form-control" name="form56_2" type="text" tabindex="129" value="" data-objref="472 0 R" title="Year" data-field-name="Year DRDA10f"
+                                                />
+                                            </div>
 
 
-                                        <input class="form-control" name="form9_2" type="checkbox" tabindex="131" data-objref="471 0 R" data-field-name="Check Box59 DRDA10f"
-                                            imageName="2/form/471 0 R" images="110100" />
-                                        <label for="form9_2">Respondent</label>
+                                            <input class="form-control" name="form34_2" type="checkbox" tabindex="130" data-objref="474 0 R" data-field-name="Check Box58 DRDA10f"
+                                                imageName="2/form/474 0 R" images="110100" />
+                                            <label for="form34_2">Petitioner</label>
 
-                                        <br>
 
-                                        <div class="input-field">
-                                            <label for="undefined_62 DRDA10f">Value ($): </label>
-                                            <input class="form-id" name="form72_2" type="text" tabindex="132" value="" data-objref="469 0 R" title="undefined" data-field-name="undefined_62 DRDA10f"
-                                            />
-                                        </div>
+                                            <input class="form-control" name="form9_2" type="checkbox" tabindex="131" data-objref="471 0 R" data-field-name="Check Box59 DRDA10f"
+                                                imageName="2/form/471 0 R" images="110100" />
+                                            <label for="form9_2">Respondent</label>
 
-                                        <br>
+                                            <br>
 
-                                        <div class="input-field">
-                                            <label for="Model DRDA10f">Model: </label>
-                                            <input class="form-control" name="form83_2" type="text" tabindex="133" value="" data-objref="476 0 R" title="Model" data-field-name="Model DRDA10f"
-                                            />
-                                        </div>
+                                            <div class="input-field">
+                                                <label for="undefined_62 DRDA10f">Value ($): </label>
+                                                <input class="form-id" name="form72_2" type="text" tabindex="132" value="" data-objref="469 0 R" title="undefined" data-field-name="undefined_62 DRDA10f"
+                                                />
+                                            </div>
 
-                                        <div class="input-field">
-                                            <label for="VIN DRDA10f">VIN:</label>
-                                            <input class="form-control" name="form82_2" type="text" tabindex="134" value="" data-objref="477 0 R" title="VIN" data-field-name="VIN DRDA10f"
-                                            />
-                                        </div>
+                                            <br>
 
-                                        <div class="input-field">
-                                            <label for="Lien Holder DRDA10f"> Lien Holder: </label>
-                                            <input class="form-control" name="form81_2" type="text" tabindex="135" value="" data-objref="467 0 R" title="Lien Holder"
-                                                data-field-name="Lien Holder DRDA10f" />
-                                        </div>
-                                    </span>
-                                </div>
-                            </li>
+                                            <div class="input-field">
+                                                <label for="Model DRDA10f">Model: </label>
+                                                <input class="form-control" name="form83_2" type="text" tabindex="133" value="" data-objref="476 0 R" title="Model" data-field-name="Model DRDA10f"
+                                                />
+                                            </div>
 
-                            <!-- ======================================PAGE 3======================================================= -->
-                            <li>
-                                <!--"Separate Property" section-->
-                                <div class="collapsible-header">Separate Property</div>
-                                <div class="collapsible-body">
-                                    <span>
-                                        <br>
+                                            <div class="input-field">
+                                                <label for="VIN DRDA10f">VIN:</label>
+                                                <input class="form-control" name="form82_2" type="text" tabindex="134" value="" data-objref="477 0 R" title="VIN" data-field-name="VIN DRDA10f"
+                                                />
+                                            </div>
 
-                                        <div class="input-field">
-                                            <label for="separate_property_desc1">Description of Separate Property(if any): </label>
-                                            <input name="separate_property_desc1" type="text" tabindex="36" value="" data-objref="376 0 R" title="separate_property_description"
-                                                data-field-name="separate_property_description" />
-                                        </div>
+                                            <div class="input-field">
+                                                <label for="Lien Holder DRDA10f"> Lien Holder: </label>
+                                                <input class="form-control" name="form81_2" type="text" tabindex="135" value="" data-objref="467 0 R" title="Lien Holder"
+                                                    data-field-name="Lien Holder DRDA10f" />
+                                            </div>
+                                        </span>
+                                    </div>
+                                </li>
 
-                                        <br>
+                                <!-- ======================================PAGE 3======================================================= -->
+                                <li>
+                                    <!--"Separate Property" section-->
+                                    <div class="collapsible-header">Separate Property</div>
+                                    <div class="collapsible-body">
+                                        <span>
+                                            <br>
 
-                                        <div class="input-field">
-                                            <label for="SPV1">Value $</label>
-                                            <input class="form-id" name="SPV1" type="text" tabindex="39" value="" data-objref="389 0 R" title="Separate Property Value"
-                                                data-field-name="Separate Property Value" />
-                                        </div>
-                                    </span>
-                                </div>
-                            </li>
-                            <li>
-                                <!--"Community Debts" section-->
-                                <div class="collapsible-header">Community Debts</div>
-                                <div class="collapsible-body">
-                                    <span>
-                                        <div class="input-field">
-                                            <label for="community_debt_desc1">Description of Community Debts (if any): </label>
-                                            <input class="form-id" name="community_debt_desc1" type="text" tabindex="40" value="" data-objref="379 0 R" title="Community Debts Description1"
-                                                data-field-name="community_debt_desc1" />
-                                        </div>
+                                            <div class="input-field">
+                                                <label for="separate_property_desc1">Description of Separate Property(if any): </label>
+                                                <input name="separate_property_desc1" type="text" tabindex="36" value="" data-objref="376 0 R" title="separate_property_description"
+                                                    data-field-name="separate_property_description" />
+                                            </div>
 
-                                        <br>
+                                            <br>
 
-                                        <div class="input-field">
-                                            <label for="CDV1">Amount Owed: </label>
-                                            <input class="form-id" name="CDV1" type="text" tabindex="45" value="" data-objref="380 0 R" title="Debt Amount Owed" data-field-name="Debt Amount Owed"
-                                            />
-                                        </div>
-                                    </span>
-                                </div>
-                            </li>
-                            <li>
-                                <!--"Separate Debts" section-->
-                                <div class="collapsible-header">Separate Debts</div>
-                                <div class="collapsible-body">
-                                    <span>
-                                        <div class="input-field">
-                                            <label for="separate_debt_desc1">Description of Debts (if any): </label>
-                                            <input class="form-id" name="separate_debt_desc1" type="text" tabindex="40" value="" data-objref="379 0 R" title="Separate Debts Description1"
-                                                data-field-name="separate_debt_desc1" />
-                                        </div>
+                                            <div class="input-field">
+                                                <label for="SPV1">Value $</label>
+                                                <input class="form-id" name="SPV1" type="text" tabindex="39" value="" data-objref="389 0 R" title="Separate Property Value"
+                                                    data-field-name="Separate Property Value" />
+                                            </div>
+                                        </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <!--"Community Debts" section-->
+                                    <div class="collapsible-header">Community Debts</div>
+                                    <div class="collapsible-body">
+                                        <span>
+                                            <div class="input-field">
+                                                <label for="community_debt_desc1">Description of Community Debts (if any): </label>
+                                                <input class="form-id" name="community_debt_desc1" type="text" tabindex="40" value="" data-objref="379 0 R" title="Community Debts Description1"
+                                                    data-field-name="community_debt_desc1" />
+                                            </div>
 
-                                        <br>
+                                            <br>
 
-                                        <div class="input-field">
-                                            <label for="SDAO1">Amount Owed: </label>
-                                            <input class="form-id" name="SDAO1" type="text" tabindex="45" value="" data-objref="380 0 R" title="Debt Amount Owed" data-field-name="Debt Amount Owed"
-                                            />
-                                        </div>
-                                    </span>
-                                </div>
-                            </li>
-                            <li>
-                                <!--"Pregnancy" section-->
-                                <div class="collapsible-header">Pregnancy</div>
-                                <div class="collapsible-body">
-                                    <span>
-                                        <div class="input-field">
-                                            <label for="baby_due_date">Baby due date (if applicable): </label>
-                                            <input class="form-id" name="baby_due_date" type="text" tabindex="40" value="" data-objref="379 0 R" title="baby_due_date"
-                                                data-field-name="baby_due_date" />
-                                        </div>
+                                            <div class="input-field">
+                                                <label for="CDV1">Amount Owed: </label>
+                                                <input class="form-id" name="CDV1" type="text" tabindex="45" value="" data-objref="380 0 R" title="Debt Amount Owed" data-field-name="Debt Amount Owed"
+                                                />
+                                            </div>
+                                        </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <!--"Separate Debts" section-->
+                                    <div class="collapsible-header">Separate Debts</div>
+                                    <div class="collapsible-body">
+                                        <span>
+                                            <div class="input-field">
+                                                <label for="separate_debt_desc1">Description of Debts (if any): </label>
+                                                <input class="form-id" name="separate_debt_desc1" type="text" tabindex="40" value="" data-objref="379 0 R" title="Separate Debts Description1"
+                                                    data-field-name="separate_debt_desc1" />
+                                            </div>
 
-                                        <br>
+                                            <br>
 
-                                        <div class="input-field">
-                                            <label for="SDAO1">Amount Owed: </label>
-                                            <input class="form-id" name="SDAO1" type="text" tabindex="45" value="" data-objref="380 0 R" title="Debt Amount Owed" data-field-name="Debt Amount Owed"
-                                            />
-                                        </div>
-                                    </span>
-                                </div>
-                            </li>
-                            <li>
-                                <!--"Requests to the Court" section-->
-                                <div class="collapsible-header">Requests to the Court</div>
-                                <div class="collapsible-body">
-                                    <span>
-                                        <label for="complete_first_name-section" style="font-size: 18px;">Complete this section to restore maiden names: </label>
-                                        <div class="input-field">
-                                            <label for="complete_first_name-section">First name: </label>
-                                            <input class="form-id" name="complete_first_name" type="text" tabindex="40" value="" data-objref="379 0 R" title="complete_first_name"
-                                                data-field-name="complete_first_name" />
-                                        </div>
-                                        <div class="input-field">
-                                            <label for="complete_middle_name-section">Middle name: </label>
-                                            <input class="form-id" name="complete_middle_name" type="text" tabindex="40" value="" data-objref="379 0 R" title="complete_middle_name"
-                                                data-field-name="complete_middle_name" />
-                                        </div>
-                                        <div class='input-field'>
-                                            <label for="complete_last_name-section">Married last name: </label>
-                                            <input class="form-id" name="complete_last_name" type="text" tabindex="40" value="" data-objref="379 0 R" title="complete_last_name"
-                                                data-field-name="complete_last_name" />
-                                        </div>
-                                        <div class='input-field'>
-                                            <label for="complete_maiden_last_name-section">Maiden last name: </label>
-                                            <input class="form-id" name="complete_maiden_last_name" type="text" tabindex="40" value="" data-objref="379 0 R" title="complete_maiden_last_name"
-                                                data-field-name="complete_maiden_last_name" />
-                                        </div>
-                                        <br>
-                                        <label for="complete_first_name-section" style="font-size: 18px;">Complete this section to request Spousal Maintenance/Support (Alimony): </label>
-                                        <div class="input-field">
-                                            <label for="alimony_monthly">Spousal Support Per Month ($): </label>
-                                            <input class="form-id" name="alimony_monthly" type="text" tabindex="40" value="" data-objref="379 0 R" title="alimony_monthly"
-                                                data-field-name="alimony_monthly" />
-                                        </div>
-                                        <div class="input-field">
-                                            <label for="alimony_duration">To continue until recipient is remarried, deceased, or for the following duration
-                                                (in months): </label>
-                                            <input class="form-id" name="alimony_duration" type="text" tabindex="40" value="" data-objref="379 0 R" title="alimony_duration"
-                                                data-field-name="alimony_duration" />
-                                        </div>
-                                        <label for="hold_harmless_date" style="font-size: 18px;">Regarding community debts, each party shall be held harmless from new debts incurred
-                                            by the opposite party beginning on the following date: </label>
-                                        <div class="input-field">
-                                            <label for="hold_harmless_date">Separation date: </label>
-                                            <input class="form-id" name="hold_harmless_date" type="text" tabindex="40" value="" data-objref="379 0 R" title="hold_harmless_date"
-                                                data-field-name="hold_harmless_date" />
-                                        </div>
-                                        <div class="input-field">
-                                            <label for="other_orders" style="font-size: 16px;">Explain any other orders requested of the court here: </label>
-                                            <input class="form-id" name="other_orders" type="text" tabindex="40" value="" data-objref="379 0 R" title="other_orders"
-                                                data-field-name="other_orders" />
-                                        </div>
-                        </ul>
-                        <div><input name="document_name" type="text" id="document_name">
-                        </div>
-                        <button type=" submit " class="btn btn-primary" id="form-submit">Submit</button>
+                                            <div class="input-field">
+                                                <label for="SDAO1">Amount Owed: </label>
+                                                <input class="form-id" name="SDAO1" type="text" tabindex="45" value="" data-objref="380 0 R" title="Debt Amount Owed" data-field-name="Debt Amount Owed"
+                                                />
+                                            </div>
+                                        </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <!--"Pregnancy" section-->
+                                    <div class="collapsible-header">Pregnancy</div>
+                                    <div class="collapsible-body">
+                                        <span>
+                                            <div class="input-field">
+                                                <label for="baby_due_date">Baby due date (if applicable): </label>
+                                                <input class="form-id" name="baby_due_date" type="text" tabindex="40" value="" data-objref="379 0 R" title="baby_due_date"
+                                                    data-field-name="baby_due_date" />
+                                            </div>
 
-                </form>
+                                            <br>
 
-                </div>
+                                            <div class="input-field">
+                                                <label for="SDAO1">Amount Owed: </label>
+                                                <input class="form-id" name="SDAO1" type="text" tabindex="45" value="" data-objref="380 0 R" title="Debt Amount Owed" data-field-name="Debt Amount Owed"
+                                                />
+                                            </div>
+                                        </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <!--"Requests to the Court" section-->
+                                    <div class="collapsible-header">Requests to the Court</div>
+                                    <div class="collapsible-body">
+                                        <span>
+                                            <label for="complete_first_name-section" style="font-size: 18px;">Complete this section to restore maiden names: </label>
+                                            <div class="input-field">
+                                                <label for="complete_first_name-section">First name: </label>
+                                                <input class="form-id" name="complete_first_name" type="text" tabindex="40" value="" data-objref="379 0 R" title="complete_first_name"
+                                                    data-field-name="complete_first_name" />
+                                            </div>
+                                            <div class="input-field">
+                                                <label for="complete_middle_name-section">Middle name: </label>
+                                                <input class="form-id" name="complete_middle_name" type="text" tabindex="40" value="" data-objref="379 0 R" title="complete_middle_name"
+                                                    data-field-name="complete_middle_name" />
+                                            </div>
+                                            <div class='input-field'>
+                                                <label for="complete_last_name-section">Married last name: </label>
+                                                <input class="form-id" name="complete_last_name" type="text" tabindex="40" value="" data-objref="379 0 R" title="complete_last_name"
+                                                    data-field-name="complete_last_name" />
+                                            </div>
+                                            <div class='input-field'>
+                                                <label for="complete_maiden_last_name-section">Maiden last name: </label>
+                                                <input class="form-id" name="complete_maiden_last_name" type="text" tabindex="40" value="" data-objref="379 0 R" title="complete_maiden_last_name"
+                                                    data-field-name="complete_maiden_last_name" />
+                                            </div>
+                                            <br>
+                                            <label for="complete_first_name-section" style="font-size: 18px;">Complete this section to request Spousal Maintenance/Support (Alimony): </label>
+                                            <div class="input-field">
+                                                <label for="alimony_monthly">Spousal Support Per Month ($): </label>
+                                                <input class="form-id" name="alimony_monthly" type="text" tabindex="40" value="" data-objref="379 0 R" title="alimony_monthly"
+                                                    data-field-name="alimony_monthly" />
+                                            </div>
+                                            <div class="input-field">
+                                                <label for="alimony_duration">To continue until recipient is remarried, deceased, or for the following
+                                                    duration (in months): </label>
+                                                <input class="form-id" name="alimony_duration" type="text" tabindex="40" value="" data-objref="379 0 R" title="alimony_duration"
+                                                    data-field-name="alimony_duration" />
+                                            </div>
+                                            <label for="hold_harmless_date" style="font-size: 18px;">Regarding community debts, each party shall be held harmless from new debts incurred
+                                                by the opposite party beginning on the following date: </label>
+                                            <div class="input-field">
+                                                <label for="hold_harmless_date">Separation date: </label>
+                                                <input class="form-id" name="hold_harmless_date" type="text" tabindex="40" value="" data-objref="379 0 R" title="hold_harmless_date"
+                                                    data-field-name="hold_harmless_date" />
+                                            </div>
+                                            <div class="input-field">
+                                                <label for="other_orders" style="font-size: 16px;">Explain any other orders requested of the court here: </label>
+                                                <input class="form-id" name="other_orders" type="text" tabindex="40" value="" data-objref="379 0 R" title="other_orders"
+                                                    data-field-name="other_orders" />
+                                            </div>
+                            </ul>
+                            <div>
 
-                <div class="form-check ">
+                                <input name="document_name" type="hidden" id="document_name" style="color: white !important;">
+                            </div>
+                            <button type="submit" class="btn btn-primary modal-trigger" id="form-submit" data-target="modal1">Submit Your Data</button>
+                            <span id="doc-link">
+            
+                            </span>
 
                     </form>
-                </div>
-                </div>
-            </div>
 
-            <div id="doc-link">
-                Link goes here
-            </div>
-            <!-- Div to hold the rendered pdf -->
-            <div id="result-pdf" style="max-width: 100%; width: 900px; height: 600px; border: 10px solid rgba(0,0,0,.4); margin: auto;">
-                PDF VERSION
-                <embed class="pdfobject" src="templates/dissolution.pdf" type="application/pdf" style="overflow: auto; width: 100%; height: 100%; padding-bottom: 3%;"
-                    internalinstanceid="26">
-            </div>
-            
-            <footer>
-                <div>Copyright &copy; Divorce Force 2018</div>
-            </footer>
-            
+                    </div>
 
-            <script type="text/javascript">
-            
-            var timestamp = Date.now();
-                    
-                    //ID FOR FORM FILENAME file-name
+                    <div class="form-check ">
+
+                        </form>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- Div to hold the rendered pdf -->
+                <div id="result-pdf" style="max-width: 100%; width: 900px; height: 600px; border: 15px solid rgba(10,10,10,.1); margin: auto; margin-top: 3%;">
+                    <embed class="pdfobject" src="templates/dissolution.pdf" type="application/pdf" style="overflow: auto; width: 100%; height: 100%;"
+                        internalinstanceid="26">
+                </div>
+
+                <!-- MODAL 
+                <div id="modal1" class="modal">
+                    <div class="modal-content">
+                        <h4>Your legal form</h4>
+                        <p>A bunch of text</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+                    </div>
+                </div> -->
+                <footer>
+                    <div>Copyright &copy; Divorce Force 2018</div>
+                </footer>
+
+
+                <script type="text/javascript">
+
+                    // -----DOCUMENT NAME ASSIGNMENT-----
+                    //Variable to hold current moment to make filenames unique
+                    var timestamp = Date.now();
+                    //Variable to assemble a standardized filename for the generated form
                     var docName = 'output-' + timestamp + '.docx'
                     $("#document_name").attr("value", docName);
                     console.log('Documentname: ' + docName)
-                var link = '<a href="/Output/' + docName + '">Click here to download your file </a>';
-                alert(link);
-                $("#doc-link").html(link);
-                $(document).ready(function () {
-                    
+                    var link = '<a id="linkbtn" class="waves-effect waves-light btn" href="/Output/' + docName + '">Download Your Form</a>';
+                    $("#doc-link").html(link);
+                    $(document).ready(function () {
 
-                    
+                        // -----MODAL-----
+
+                        Materialize.updateTextFields();
+                        $('.collapsible').collapsible();
+                        $('.modal').modal();
+                    });
+
+                    $('.modal').modal({
+                        dismissible: true, // Modal can be dismissed by clicking outside of the modal
+                        opacity: .5, // Opacity of modal background
+                        inDuration: 300, // Transition in duration
+                        outDuration: 200, // Transition out duration
+                        startingTop: '4%', // Starting top style attribute
+                        endingTop: '10%', // Ending top style attribute
+                        ready: function (modal, trigger) { // Callback for Modal open. Modal and trigger parameters available.
+                            alert("Ready");
+                            console.log(modal, trigger);
+                        },
+                        complete: function () { alert('Closed'); } // Callback for Modal close
+                    }
+                    );
+                </script>
+            </div>
+            <footer style="width: 100%; margin: auto !important;">
+                <!-- <div style="width: 100%; margin: auto !important;"> -->
+                Copyright &copy; Divorce Force 2018
+                <!-- </div> -->
+            </footer>
+
+            <!--Initializing Materialize-->
+            <script type="text/javascript"></script>
+            <script>
+                $(document).ready(function () {
                     Materialize.updateTextFields();
                     $('.collapsible').collapsible();
-                    $('.modal').modal();
-                    });
-                
-
-                $('.modal').modal({
-                    dismissible: true, // Modal can be dismissed by clicking outside of the modal
-                    opacity: .5, // Opacity of modal background
-                    inDuration: 300, // Transition in duration
-                    outDuration: 200, // Transition out duration
-                    startingTop: '4%', // Starting top style attribute
-                    endingTop: '10%', // Ending top style attribute
-                    ready: function (modal, trigger) { // Callback for Modal open. Modal and trigger parameters available.
-                        alert("Ready");
-                        console.log(modal, trigger);
-                    },
-                    complete: function () { alert('Closed'); } // Callback for Modal close
-                }
-                );
-
-
-
-
+                });
             </script>
-        </div>
-        <!-- Div to hold the rendered pdf -->
-        <div id="result-pdf" style="max-width: 100%; width: 900px; height: 600px; border: 10px solid rgba(0,0,0,.4); margin: auto;">
-            PDF VERSION
-            <embed class="pdfobject" src="templates/dissolution.pdf" type="application/pdf" style="overflow: auto; width: 100%; height: 100%; padding-bottom: 3%;"
-                internalinstanceid="26">
-        </div>
-        <footer>
-            <div>Copyright &copy; Divorce Force 2018</div>
-        </footer>
-
-        <!--Initializing Materialize-->
-        <script type="text/javascript"></script>
-        <script>
-            $(document).ready(function () {
-                Materialize.updateTextFields();
-                $('.collapsible').collapsible();
-
-            });
-
-      </script>
 
 
 

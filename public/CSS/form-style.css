@@ -1,8 +1,55 @@
 body {
     background: linear-gradient(62deg,#66ccff, #003399);
     margin-bottom: 50px;
-}
 
+        /* ANIMATED BACKGROUND
+        background: linear-gradient(270deg, #66ccff, #003399, #66ccff, #100802, #66ccff);
+        background-size: 1000% 1000%;
+        height: 500px;
+        background: linear-gradient(270deg, #003399, #100082, #66ccff, #003399, #100082);
+        background-size: 1200% 1200%;
+        -webkit-animation: AnimationName 59s ease infinite;
+        -moz-animation: AnimationName 59s ease infinite;
+        animation: AnimationName 59s ease infinite;
+            
+        }
+        
+        @-webkit-keyframes AnimationName {
+            0% {
+                background-position: 0% 50%
+            }
+            50% {
+                background-position: 100% 50%
+            }
+            100% {
+                background-position: 0% 50%
+            }
+        }
+        
+        @-moz-keyframes AnimationName {
+            0% {
+                background-position: 0% 50%
+            }
+            50% {
+                background-position: 100% 50%
+            }
+            100% {
+                background-position: 0% 50%
+            }
+        }
+        
+        @keyframes AnimationName {
+            0% {
+                background-position: 0% 50%
+            }
+            50% {
+                background-position: 100% 50%
+            }
+            100% {
+                background-position: 0% 50%
+             } */
+    }
+        
 nav {
     background-color: #444;
     padding-left: 2%;
@@ -11,7 +58,31 @@ nav {
 
 #form-submit {
     color: white;
-    background-color: #0000cc;
+    font-weight: bold;
+    background: linear-gradient(rgba(0, 0, 204, 0.9) 30%, rgba(120, 120, 250, 0.8));
+    /* background-color: #0000cc; */
+    margin: auto;
+    padding-top: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 4%;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    margin-left: 5%;
+}
+#linkbtn {
+    color: white;
+    font-weight: bold;
+    /* background-color: #11dfcd; */
+    background: linear-gradient(rgba(41, 169, 192, 0.9) 30%, rgba(81, 209, 242, 0.8));
+    margin: auto;
+    padding-top: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 4%;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    margin-left: 5%;
 }
 
 footer {
